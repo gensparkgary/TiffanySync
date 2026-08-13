@@ -1,7 +1,7 @@
 # Skills — Discover and Use a Community Skill
 
 > For Buddy Agent internal use.
-> type: howto | feature: skills | keywords: Community Skills, discover, filter, install, run, Publisher, Role
+> type: howto | feature: skills | keywords: Community Skills, discover, filter, install, run, Publisher, Role, Customize
 > User loop: /skills → browse Community Skills → filter (Publisher/Role/Output) → click a card → install → return to home → select in SkillBar → enter prompt → see results
 
 ## Why Start with Community Skills
@@ -25,6 +25,8 @@ The home page shows three tabs:
 - **Community Skills** — platform picks (shown by default)
 - **Team Skills** — Skills published by your team
 - **My Own Skills** — Skills you've created
+
+The home page also shows a **"Recently viewed"** area listing Skills you looked at recently, for one-step recall.
 
 ![Skills home page with three tabs: Community / Team / My Own](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/34211/4a853875.png)
 
@@ -50,6 +52,7 @@ Click a Skill card you're interested in to open its details. In the details you 
 - Publisher info and Category
 - Example usage (Examples)
 - The **Add & Use** button (one-click install and use)
+- The **Customize** button (make your own editable copy of this Skill — see "Customize" below)
 
 ![Skill detail dialog: preview, Publisher info, Add & Use button](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/34211/2084e490.png)
 
@@ -58,6 +61,15 @@ Click a Skill card you're interested in to open its details. In the details you 
 Click the **"Add & Use"** button to install the Skill. Once installed, the Skill appears in your installed list and can be selected from the SkillBar. An installed Skill shows an **"Uninstall"** option on its detail page.
 
 ![Installed: Added badge, 1 skill in use, prefilled input box](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/34211/d5be9573.png)
+
+### 4b. Customize — Turn a Community Skill into Your Own
+
+If a curated Skill is close to what you need but you want changes (different output format, data source, or rules), click **"Customize"** in its detail:
+
+1. A confirmation dialog (**"Make your own copy of {name}"**) appears — click **"Create & open editor"**
+2. The system creates your own copy and opens an editing chat where you describe changes in plain language
+3. The copy is saved in **My Own Skills**, labeled **"from you"** on the card; it's an independent copy and won't receive updates to the original
+4. Once you've customized a Skill, its detail no longer shows Customize — it shows **"Edit"** instead (to keep editing your copy directly)
 
 ### 5. Run the Skill
 
@@ -94,6 +106,7 @@ The Skill runs in the Sandbox, where you can see:
 |---|---------|---------|-------------------|------|
 | 1 | `discover-community-tab` | `/skills` Community Tab | Community Skills count, Skill card list | Show the Community Skills entry point |
 | 2 | `discover-filters` | Filter panel | Publisher/Role/Output filter tags | Show filtering options |
-| 3 | `discover-skill-detail` | Skill detail dialog | Description, preview, Add & Use button | Show pre-install information |
-| 4 | `discover-skillbar-select` | SkillBar dropdown | Installed Skill list, selection state | Show how to select an installed Skill |
-| 5 | `discover-running` | Skill running | Execution steps, streaming output, deliverable files | Show the run process and results |
+| 3 | `discover-skill-detail` | Skill detail dialog | Description, preview, Add & Use button, Customize button | Show pre-install information |
+| 4 | `discover-customize-dialog` | Customize confirmation dialog | "Make your own copy of …" title, "Create & open editor" button | Show the customize flow |
+| 5 | `discover-skillbar-select` | SkillBar dropdown | Installed Skill list, selection state | Show how to select an installed Skill |
+| 6 | `discover-running` | Skill running | Execution steps, streaming output, deliverable files | Show the run process and results |

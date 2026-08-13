@@ -1,7 +1,7 @@
 # Skills — Creating a Skill
 
 > For Buddy Agent internal use.
-> type: howto | feature: skills | keywords: Create, Create, Upload, Upload, New Skill, skill-creator
+> type: howto | feature: skills | keywords: Create, Create, Upload, Upload, New Skill, skill-creator, Customize
 > User loop: + New Skill → choose a creation method → AI-guided or upload a file → save → see it in My Own Skills → run to verify
 
 ## Why Create Your Own Skill
@@ -18,9 +18,11 @@
 
 ![+ New Skill button (top-right corner)](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/34213/35bd74a8.png)
 
-## Three Ways to Create
+## Four Ways to Create
 
-![Dropdown with three options: Create for myself / Upload / Create for Team](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/34213/d0dc33e9.png)
+The dropdown now offers four options: **Create for myself**, **Create for Team**, **Start from a community skill**, and **Upload**.
+
+![Dropdown with four options: Create for myself / Create for Team / Start from a community skill / Upload](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/51137/b0656195.png)
 
 ### Option 1: Create for myself (AI-guided creation)
 
@@ -64,7 +66,29 @@ Drag and drop or select a file. Supported formats: `.zip`, `.skill`, `.md` (a `.
 
 The dialog shows "We'll unpack it and install it into My Skills" — click **"Save skill"** to confirm. The Skill appears in the **My Own Skills** tab and is ready to use right away.
 
-### Option 3: Create for Team (team creation)
+### Option 3: Start from a community skill (customize)
+
+Ideal when an existing Skill is close to what you need and you want to build on it.
+
+#### 1. Click "+ New Skill" → "Start from a community skill"
+
+A searchable Skill picker (**"Start from a community skill"**) opens listing curated community Skills.
+
+#### 2. Pick a source Skill and confirm
+
+A confirmation dialog (**"Make your own copy of {name}"**) explains two things:
+- It opens a chat where you describe changes in plain language (rules, output format, data source, or a full rewrite)
+- The copy is saved to **My Own Skills** as you go — use it or share it anytime
+
+If the name clashes with an existing Skill of yours, give the copy a new name first. Click **"Create & open editor"** to continue.
+
+#### 3. Edit conversationally
+
+In the editing session, just tell the Agent what to change. When you're done, the copy appears in **My Own Skills** with a **"from you"** label on the card.
+
+> The same customization is also available from the **"Customize"** button on a Community Skill's detail page — see "Discover and Use a Community Skill."
+
+### Option 4: Create for Team (team creation)
 
 Shown in the dropdown as **"Create for Team"** (with a "Team Plan" badge). Requires a Team Plan. The creation flow is the same as "Create for myself," but the Skill is submitted to your team admin for review, and once approved it appears in the **Team Skills** tab.
 
@@ -80,7 +104,7 @@ Users without a Team Plan who click this option will open the Team Plan upgrade 
 
 - You can select and run it from the SkillBar on the home page
 - You can share it with others via the Share feature
-- You can edit or delete it in Manage Skills
+- You can open the Skill's detail dialog and click **"Edit"** there to keep refining it conversationally (the card face only shows Share and Added/Uninstall — no Edit button), or delete it in Manage Skills
 
 ---
 
@@ -88,7 +112,8 @@ Users without a Team Plan who click this option will open the Team Plan upgrade 
 
 | # | Screenshot ID | Capture location | Must be visible in the screenshot | Purpose |
 |---|---------|---------|-------------------|------|
-| 1 | `create-dropdown` | + New Skill dropdown expanded | The three options "Create for myself" (subtitle: Private to your account) / "Create for Team" (Team Plan badge) / "Upload" | Show the creation entry points |
+| 1 | `create-dropdown` | + New Skill dropdown expanded | The four options "Create for myself" (subtitle: Private to your account) / "Create for Team" (Team Plan badge) / "Start from a community skill" / "Upload" | Show the creation entry points |
 | 2 | `create-agent-chat` | skill-creator Agent chat | Agent's guiding questions, user's answers, creation progress | Show the AI-guided creation process |
 | 3 | `create-upload-modal` | Upload dialog | File selection area, supported format notes | Show the upload interface |
-| 4 | `create-my-own-result` | My Own Skills tab | The newly created Skill card appearing in the list | Confirm successful creation |
+| 4 | `create-customize-dialog` | Start from a community skill confirmation dialog | "Make your own copy of …" title, "Create & open editor" button | Show the customize creation flow |
+| 5 | `create-my-own-result` | My Own Skills tab | The newly created Skill card appearing in the list | Confirm successful creation |

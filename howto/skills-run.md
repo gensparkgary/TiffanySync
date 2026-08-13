@@ -72,6 +72,8 @@ After the Skill finishes running, deliverable files appear in the **Output files
 
 ![Output files deliverables drawer](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/34212/1d2b990c.png)
 
+**Tidying deliverables (rename/delete)**: The task owner can **rename** or **delete** delivered files from the file row's menu in the files pane — handy when long-running tasks pile up similarly named artifacts. Some multi-file outputs (such as slide/document renders) can't be renamed or deleted.
+
 ### 6. Task List (history)
 
 All Skill run records are saved in the Task List (click the hamburger menu icon in the top-left corner to open it from the left drawer). You can:
@@ -98,4 +100,5 @@ All Skill run records are saved in the Task List (click the hamburger menu icon 
 | 2 | `run-slash-popover` | Panel that appears after typing `/` | Skill search list | Show the Slash command selection method |
 | 3 | `run-executing` | Skill running | Execution step cards, Thinking area, streaming output | Show the execution process |
 | 4 | `run-deliverables` | Output files drawer | File list, preview/download buttons, folder icon entry point in top-right corner | Show how to get result files |
-| 5 | `run-task-list` | Task List drawer | List of historical run records, Search Chats | Show how to find history |
+| 5 | `run-file-menu` | Output files file row menu | Rename/Delete actions | Show deliverable tidying |
+| 6 | `run-task-list` | Task List drawer | List of historical run records, Search Chats | Show how to find history |

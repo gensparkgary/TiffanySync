@@ -26,15 +26,18 @@ Skills run in the **SuperAgent Sandbox**—an isolated execution environment tha
 |------|------|--------|
 | **Community Skills** | Platform-curated, organized by publisher (Anthropic, OpenAI, Genspark, etc.) | 100+ |
 | **Team Skills** | Skills published by your team, visible only to team members (requires Team Plan) | Depends on team |
-| **My Own Skills** | Skills you create or upload yourself | Personal collection |
+| **My Own Skills** | Skills you create, upload, or customize yourself | Personal collection |
 
-## Three Ways to Create
+## Four Ways to Create
 
 | Method | Use Case | Steps |
 |------|---------|------|
 | **Create for myself** | Start from scratch, AI guides you through describing your needs | + New Skill → Create for myself → chat with the Agent |
 | **Upload** | Already have a Skill file (.zip/.skill/.md) | + New Skill → Upload → select file |
+| **Start from a community skill (customize)** | An existing Skill is close to what you need and you want to build on it | + New Skill → Start from a community skill (or Customize on a Skill's detail page) → get your own copy → edit conversationally |
 | **Create for Team** | Create a shared Skill for your team (requires Team Plan) | + New Skill → Create for Team |
+
+A customized copy is saved in My Own Skills, labeled "from you" on the card; it's an independent copy and won't receive updates to the original. Any Skill you own can then keep being refined conversationally via **Edit** in its detail dialog (the card face has no Edit button).
 
 ## Three Ways to Share
 
@@ -54,7 +57,7 @@ Select a Skill → enter prompt → Sandbox executes → streaming output → de
 2. Enter your specific content/requirements
 3. The Skill executes in the Sandbox (can search, generate files, run code)
 4. See execution steps and output in real time
-5. Preview and download deliverable files
+5. Preview and download deliverable files; the task owner can also rename or delete delivered files from the files pane
 
 ## Connectors — Let Skills Access External Data
 
@@ -75,6 +78,9 @@ What's the user intent?
 │
 ├─ "I want to find a ready-made tool"
 │   └─ Community Skills → filter by Role/Publisher/Output → install → use
+│
+├─ "An existing Skill is close, but I want to tweak it"
+│   └─ Customize on the Skill's detail page (or + New Skill → Start from a community skill) → get your own editable copy
 │
 ├─ "I want to package my workflow"
 │   ├─ For myself → Create for myself
@@ -99,8 +105,9 @@ What's the user intent?
 
 | Capability | Description |
 |------|------|
-| Discover | Community / Team / My Own tabs + Publisher/Role/Output filters |
-| Create | AI-guided creation / file upload / team creation |
+| Discover | Community / Team / My Own tabs + Publisher/Role/Output filters + Recently viewed recall |
+| Create | AI-guided creation / file upload / customize from a community Skill / team creation |
+| Edit | Your own Skills are editable conversationally (Edit in the Skill's detail dialog); community Skills can be Customized into a copy first |
 | Run | SkillBar select → input → Sandbox execution → streaming output → file delivery |
 | Share | Public Link / Team Publish / Peer Share |
 | Manage | Install / Uninstall / Delete / Update |

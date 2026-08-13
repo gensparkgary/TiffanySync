@@ -1,8 +1,8 @@
 # Skills — Managing Skills
 
 > For Buddy Agent internal use.
-> type: howto | feature: skills | keywords: manage, Uninstall, Delete, Manage Skills, uninstall
-> User loop: Manage Skills → view installed list (Installed/Received/Sent) → Uninstall/Delete → return to home page to confirm it took effect
+> type: howto | feature: skills | keywords: manage, Uninstall, Delete, Edit, Manage Skills, uninstall
+> User loop: Manage Skills → view installed list (Installed/Received/Sent) → Uninstall/Delete/Edit → return to home page to confirm it took effect
 
 ## Why manage Skills
 
@@ -40,16 +40,15 @@ Hover over a Skill card and the button label changes from **"Added"** to **"Unin
 
 Community / Team Skills can be reinstalled at any time after being uninstalled.
 
-### 3. Modify a Skill you created
+### 3. Edit a Skill you own (chat-based editing)
 
-Installed Skills (including ones you created) **currently do not support online editing**.
+Skills in My Own Skills — whether you created, uploaded, or customized them — now support in-app editing:
 
-To modify a Skill you created:
-1. Edit the Skill files locally (the instructions, trigger words, output format, etc. in SKILL.md)
-2. **Delete** the old version (see Delete below)
-3. Re-upload the modified files via **+ New Skill → Upload**
+1. On the `/skills` home page, find the Skill in **My Own Skills**, open its detail dialog, and click **"Edit"** there (the card face only shows Share and Added/Uninstall — there is no Edit button on the card)
+2. An editing session opens (a chat interface) — describe what to change in plain language: rules, output format, data source, or a full rewrite
+3. Changes are saved back to My Own Skills as the conversation goes; no need to delete and re-upload
 
-Community or team-installed Skills likewise can't be edited.
+Curated Community Skills can't be edited directly, but you can use **"Customize"** on the detail page to make your own editable copy (the copy appears in My Own Skills labeled "from you"). See "Discover and Use a Community Skill" for details.
 
 ### 4. Delete (My Own Skills only)
 
@@ -69,4 +68,7 @@ For Skills you created, click **"Delete"** to remove them. Deletion cannot be un
 | # | Screenshot ID | Capture location | Must be visible in the screenshot | Purpose |
 |---|---------|---------|-------------------|------|
 | 1 | `manage-list` | Manage Skills dialog | Installed/Received/Sent tabs, Skill list, search box | Show the full management interface |
+| 2 | `manage-edit-entry` | Skill detail dialog (a My Own Skill) | The "Edit" button inside the detail dialog | Show the edit entry point |
 | 3 | `manage-update` | Team Skill update prompt | "Update available" badge | Show the version update prompt |
+
+![Owned skill's detail dialog: the Edit button (next to Use / Added)](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/51137/08f1c9ff.png)

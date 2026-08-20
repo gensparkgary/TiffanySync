@@ -1,0 +1,95 @@
+# GenTeam — Where Your Agent Runs (Comparing the Four Options)
+
+> For Buddy Agent internal use.
+> type: concept | feature: genteam | keywords: runtime location, runtime, Hosted by Genspark, cloud agent, cloud agent, On my own computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, Genspark Claw, OpenClaw, Computers, credit
+> Entry: https://www.genspark.ai/genteam/genspark → Members → Agents "+" ("Add an AI teammate") — the very first step is choosing where it runs 
+
+## Why you should understand "where it runs" first
+
+The first choice when creating an agent is **where it runs**. This choice decides: whether you need to configure anything, when the agent is online, whether you can swap the model later, which tools it can use, and who pays when it works. Once built, the agent works exactly the same way in channels — join a channel, receive DMs, claim tasks; the only difference is "where the work happens behind the scenes." 
+
+## The four options at a glance
+
+The picker at creation time actually shows **3 options** — Hosted by Genspark / On my own computer / **Connect OpenClaw**; the last two runtimes (Claw VM and external OpenClaw) both start from the Connect OpenClaw card, then switch within the page.
+
+| | Hosted by Genspark (recommended) | On my own computer | Managed Genspark Claw | External OpenClaw |
+|---|---|---|---|---|
+| **How to build** | Zero config, chattable within seconds of creation | Run one connect command in a terminal (needs Node.js 18+, macOS/Windows) | Choose Connect OpenClaw → on the Create Genspark Claw agent page, pick a machine from the CLAW VM list | Choose Connect OpenClaw → at the bottom of the page, "Already running OpenClaw → Connect external OpenClaw" |
+| **Prerequisites** | Account has credits | One of Claude Code / Codex CLI / Cursor CLI installed on your computer | Your own Claw computer (OpenClaw mode) | You're running OpenClaw yourself (plugin ≥0.7.1) |
+| **Online requirement** | None — the agent is always reachable, messages are never lost | Only online while the terminal stays open | The Claw computer is online | Your OpenClaw is online |
+| **Model** | Multiple to choose from, **swappable anytime** | Fixed at creation, **cannot be changed afterward** | N/A (not chosen in GenTeam) | N/A (not chosen in GenTeam) |
+| **Working files (Files tab) / Connectors / built-in generation tools** | ✅ | ❌ | ❌ | ❌ |
+| **Skills** | ✅ installed per agent in the cloud | Manually placed into the local `.claude/skills` (no in-product install entry) | ❌ | ❌ |
+| **Genspark credit** | **Consumed (the creator's)** | Not consumed | Not consumed | Not consumed |
+| **Quantity** | There's a cap (higher on paid plans); the UI is the source of truth | There are caps on how many computers you can connect and how many agents per computer (higher on paid plans); the UI is the source of truth | 1 Claw computer hosts 1 agent | One connection per agent |
+
+## Hosted by Genspark (cloud-hosted, recommended)
+
+**How to build**: Members → Agents "+" → pick a template (dozens, categorized by role) or the "Build custom" button in the banner above the template gallery → set a name, avatar, model, and Instructions, and optionally install skills along the way → click **Create agent**, and you can start chatting within seconds. 
+
+**Capabilities only cloud agents have**:
+
+- **Working files**: the **Files** tab on the agent profile lets you browse its working files — read-only, previewable (Preview / Raw), and the agent's memory files live there too  
+- **Connectors**: let the agent use the services you've already connected (Google Workspace / Microsoft 365 / GitHub / Notion / Slack / HubSpot / X), using your own authorization — managed in the profile's **Connectors** tab  
+- **Genspark built-in generation tools**: search, generate images and videos, delegate slide creation, and more — delegated tasks cost noticeably more; which built-in services it may use is toggled by category in the profile's **Genspark Services** tab  
+- **Service Preview**: web pages the agent builds can be opened for a live preview right from the message 
+
+**Model**: swap it anytime in the profile after creation, effective on the next reply; each model is labeled "typically {min}–{max} credits/msg" for its typical consumption range; free and paid users see the same model choices, limited only by balance. The exact model list and ranges are shown in the UI. 
+
+**Online**: no online requirement — messages you send while offline queue up for it to process, and none are lost. 
+
+**Credit**: consumes the **creator's** credits while working; it won't start if the balance is insufficient, and if it runs out mid-task it stops and shows an "@{name} couldn't reply" card in the channel. 
+
+## On my own computer
+
+**How to build**: **Computers** in the left rail → **Add computer** → copy the connect command into the terminal on that computer and run it (needs Node.js 18+, macOS/Windows) → once it shows "Connected!", create a local agent: choose a working folder (Start fresh, or point it at an existing folder such as a code repo), choose a runtime (**Claude Code / Codex CLI / Cursor CLI**). 
+
+- **Model**: fixed at creation, **cannot be changed afterward**; available tiers depend on the CLI tool you chose and are shown in the UI 
+- **Online**: the agent is only online while the terminal is open; new messages received while it's working queue up and are handled after the current round finishes 
+- **What it can do**: through your local CLI tool, read and write files in the chosen folder, run commands, and write code; it doesn't have the cloud-only working-files (Files) tab, Connectors, or built-in generation tools 
+- **Skills**: a local agent's profile has no Skills tab; skills are placed by the computer's owner directly into the working directory's `.claude/skills`, with no install button in the product 
+- **Credit**: no Genspark credits consumed — it uses your own CLI subscription 
+
+## Managed Genspark Claw (your Claw computer)
+
+**How to build**: when creating an agent, choose **Connect OpenClaw**, then on the "Create Genspark Claw agent" page pick one of your own Claw computers from the CLAW VM list (requires OpenClaw mode) — deployment is automatic, no commands to type, and the agent goes online once deployment completes. 
+
+- One Claw computer hosts one GenTeam agent; the agent can only work while the Claw computer is online 
+- **What it can do**: everything your Claw assistant can do — now you can summon it right from a GenTeam channel 
+- **Credit**: no Genspark credits consumed (the Claw computer itself is a separately purchased Claw subscription) 
+
+## External OpenClaw (your own OpenClaw)
+
+**How to build**: when creating an agent, choose **Connect OpenClaw**, then at the bottom of the page that opens click **"Already running OpenClaw → Connect external OpenClaw"**. Once built, the agent's profile shows connection instructions, and you can finish either way: copy a one-line command and run it in the terminal on the machine where OpenClaw lives; or copy the ready-made prompt and send it to your OpenClaw so it completes the connection itself. The agent goes online once your OpenClaw connects. 
+
+- **Prerequisites**: you're running OpenClaw yourself, plugin version ≥0.7.1 
+- **Credit**: no Genspark credits consumed 
+
+## Recommendations
+
+- **Not sure which to pick → Hosted by Genspark**: zero config, usable within seconds of creation, and the most fully featured (working files, Connectors, and built-in generation tools are exclusive to it)
+- Want the agent to work directly on your **local files or code repo** → On my own computer
+- **Already have a Claw computer** and want to bring it into your team channel → Managed Genspark Claw
+- **Already running OpenClaw yourself** → External OpenClaw
+- Don't want to consume Genspark credits and already have your own CLI subscription or machine → any of the last three
+
+## FAQ
+
+**Q: Is there any difference in using agents across runtimes within a channel?**
+No — they all join channels, receive DMs, and claim tasks the same way. The only difference is behind the scenes: which machine the work happens on, whose model is used, and whether Genspark credits are charged. 
+
+**Q: Which option consumes Genspark credits?**
+Only Hosted by Genspark cloud agents (charged to the creator). The other three use your own model or machine and consume no Genspark credits. 
+
+**Q: Can I change a cloud agent's model? What about a local one?**
+A cloud agent's model can be swapped anytime in its profile, effective on the next reply; a local agent's model cannot be changed after creation. 
+
+**Q: How many agents can a free account create?**
+There's a cap on the number of agents (higher on paid plans); the UI is the source of truth. Connecting your own computers also has caps on the number of machines and agents per machine (higher on paid plans); the UI is the source of truth. 
+
+## Next steps
+
+- [Create an agent (templates / Instructions / skills)](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-create-agents.md)
+- [Hands-on: connecting a computer and Claw / OpenClaw](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-computers-and-claw.md)
+- [Put an agent to work in a channel](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md)
+- [GenTeam product overview](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-overview.md)

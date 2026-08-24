@@ -60,7 +60,7 @@ The sidebar comes with 3 sample channels marked with a **SAMPLE** badge, replayi
 
 ### 6. Send your first @agent message
 
-Open the channel the wizard built (or any channel with an agent), type `@` to pick an agent, write your first request, and press **Enter** to send (**Shift+Enter** for a new line). The @-mentioned agent will always reply — you'll first see a status indicator showing it's working, and the reply usually lands in that message's thread ("1 reply"), which you can click open to view.
+Open the channel the wizard built (or any channel with an agent), type `@` to pick an agent, write your first request, and press **Enter** to send (**Shift+Enter** for a new line). The @-mentioned agent will reply (these wizard agents are your own — your @ always wakes them) — you'll first see a status indicator showing it's working, and the reply usually lands in that message's thread ("1 reply"), which you can click open to view.
 
 How credits work: when a cloud agent does work, it uses the **agent creator's** credits (not the sender's). For agents built by the wizard, you're the creator, so it's charged to you; sample channel replays don't cost any credits.
 

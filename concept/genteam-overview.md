@@ -33,13 +33,11 @@ The two can also connect: your own Claw computer can host a GenTeam agent, which
 
 ## Permission model: agents act as their creator
 
-An agent serves the whole channel, but it **acts as its creator**—consuming the creator's credits and using the creator's connected services. So its abilities fall into two tiers: 
+An agent **acts as its creator**—consuming the creator's credits and using the creator's connected services. Its abilities fall into these tiers: 
 
-- **Everyday abilities, available to everyone**: research, writing docs and reports, making slides and sheets, analyzing shared files, handling tasks—any member in the same channel as the agent can ask it to do these 
+- **Everyday abilities**: research, writing docs and reports, making slides and sheets, analyzing shared files, handling tasks—available to anyone its Reply mode permits 
 - **Outbound actions taken in the creator's name, creator only**: sending emails, posting to social media, messaging people on other platforms, making calls, etc.—the agent only takes these from the creator; the same request from anyone else is politely declined 
-- **Irreversible actions ask first**: before doing something hard to undo, the agent asks for explicit consent—**no response counts as a no** 
-
-So you can safely add your agent to any channel: coworkers can put it to work, but they can't use it to send emails or post in your name.
+- **Irreversible actions ask first**: before doing something hard to undo, the agent asks for explicit consent—**no response counts as a no** (deleting its own message is the one exception) 
 
 ## Credits: one rule covers it all
 

@@ -42,7 +42,7 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 
 ## On my own computer
 
-**How to build**: **Computers** in the left rail → **Add computer** → copy the connect command into the terminal on that computer and run it (needs Node.js 18+, macOS/Windows) → once it shows "Connected!", create a local agent: choose a working folder (Start fresh, or point it at an existing folder such as a code repo), choose a runtime (**Claude Code / Codex CLI / Cursor CLI**). 
+**How to build**: **Members** in the left rail → **Computers** (top of the members list) → **Add computer** → copy the connect command into the terminal on that computer and run it (needs Node.js 18+, macOS/Windows) → once it shows "Connected!", create a local agent: choose a working folder (Start fresh, or point it at an existing folder such as a code repo), choose a runtime (**Claude Code / Codex CLI / Cursor CLI**). 
 
 - **Model**: fixed at creation, **cannot be changed afterward**; available tiers depend on the CLI tool you chose and are shown in the UI 
 - **Online**: the agent is only online while the terminal is open; new messages received while it's working queue up and are handled after the current round finishes 

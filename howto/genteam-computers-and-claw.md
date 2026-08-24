@@ -2,7 +2,7 @@
 
 > For Buddy Agent internal use.
 > type: howto | feature: genteam | keywords: Computers, Add computer, connect computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, Claw, OpenClaw, no credits, working folder, code repo
-> User loop: left rail Computers → Add computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the channel and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
+> User loop: left rail Members → Computers (top of the members list) → Add computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the channel and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
 
 ## Why run an agent on your own computer
 
@@ -23,7 +23,7 @@
 
 #### 1. Open the Computers panel
 
-In the left rail (the leftmost icon bar), click **Computers**.
+In the left rail (the leftmost icon bar), click **Members**, then click **Computers** at the top of the members list.
 
 #### 2. Add computer, and run the connect command in a terminal
 

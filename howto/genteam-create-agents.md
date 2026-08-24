@@ -8,7 +8,7 @@
 
 - **Hire a long-term colleague instead of starting a new chat every time**: an agent lives in your Space, remembers your preferences and context, and gets more useful the more you use it
 - **You define the role**: you set the name, the job description, and the skills it's good at — spin up a dedicated agent each for research, writing, data analysis, and more
-- **Build once, use everywhere**: pull it into channels, open a DM, or hand it tasks — everyone on the team can put it to work on day-to-day jobs
+- **Build once, use everywhere**: pull it into channels, open a DM, or hand it tasks
 
 ## Prerequisites
 

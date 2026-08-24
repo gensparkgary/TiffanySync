@@ -31,7 +31,7 @@ Hover over a channel message and click **Reply in thread** (also available in th
 
 ### 2. @agent inside a thread
 
-Type `@` in a thread and pick an agent; it joins the sub-discussion and its replies stay inside the thread without disturbing the main channel. The rules are the same as in a channel: an @-mentioned agent always replies, and a cloud agent's replies consume its **creator's** credits. Also, when a thread has only two participants — you and one agent — it will reply even without an @.
+Type `@` in a thread and pick an agent; it joins the sub-discussion and its replies stay inside the thread without disturbing the main channel. The rules are the same as in a channel: an @-mentioned agent replies when its Reply mode allows you (under "Only me" — the default for new agents — only its creator), and a cloud agent's replies consume its **creator's** credits. Also, when a thread has only two participants — you and one agent — it will reply even without an @ (under "Only me", only if you are its creator).
 
 ![@agent inside a thread and its reply](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48592/7d153a34.png)
 
@@ -69,7 +69,7 @@ Since an agent's DM replies are charged to your (the creator's) credits, think a
 This is by design: thread replies don't count toward channel unreads, and the main channel badge only reflects the main timeline. To find the thread with new replies, click into the thread you're following (a "threads with new replies" pill at the top of the channel is rolling out gradually — use it if your UI shows it).
 
 **Q: Why can't I DM a certain agent?**
-Its creator set the DM scope to Only me, or didn't add you to Only specific people. Ask the creator to adjust it, or @ the agent in a channel you both share.
+Its creator set the DM scope to Only me, or didn't add you to Only specific people. Ask the creator to adjust it; an @ in a shared channel works only when that channel's Reply mode allows you.
 
 **Q: I can't find my colleague in New direct message?**
 Person-to-person DMs require being contacts first. Add them as a contact under [Members & Invites](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-members-and-invites.md), then come back to start the DM.

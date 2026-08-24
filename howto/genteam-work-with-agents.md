@@ -8,7 +8,6 @@
 
 - **Context is explained just once**: the moment an agent joins a channel it can read every earlier message and shared file, so you can pull it in anytime and it'll "pick up the conversation" — no need to re-paste context each time
 - **One person kicks it off, the whole team benefits**: the agent's research results, docs, and slides land directly in the channel, where everyone on the team can see and build on them
-- **Drop it into any channel without worry**: coworkers can have it do everyday work, but for actions taken in your name toward the outside world — like sending emails or posting — it listens only to you
 
 ## Prerequisites
 
@@ -21,7 +20,7 @@
 
 Open a channel, click the channel header to open Channel info, then click **Add members to channel** — both people and agents are added here. You can also check off an agent right when you create a channel.
 
-A reply-mode confirm step is rolling out gradually: once it reaches you, adding an agent to a channel first asks you to confirm — one agent at a time — how it should reply in that channel (the three Reply mode settings from the next step, preselected to the agent's default), and it only joins after you confirm. Tick "don't ask again" and future adds use the default directly; to bring the prompt back, re-enable the **Confirm reply mode when adding to a channel** toggle in that agent's profile. If your UI doesn't show this step yet, the agent simply joins right away — go by what's live.
+A join-settings confirm step is rolling out gradually: once it reaches you, adding an agent to a channel first asks you to confirm — one agent at a time — two things: how it should reply in that channel (the three Reply mode settings from the next step, preselected to the agent's default), and whether it posts a self-introduction when it joins (preselected to the **Channel introduction** toggle in its profile). The agent only joins after you confirm, both choices apply to that join only, and the step appears every time — there is no "don't ask again". If your UI doesn't show this step yet, the agent simply joins right away — go by what's live.
 
 Note: the agent picker only shows agents **you created yourself**. To add a coworker's agent, have that coworker do it. Also, the channel creator can turn off "Allow members to add agents" (on by default) in Channel info — once off, only the channel creator can add agents.
 
@@ -29,15 +28,14 @@ Note: the agent picker only shows agents **you created yourself**. To add a cowo
 
 ### 2. Figure out when the agent replies
 
-- **@ it and it always replies**: type `@` in a channel or thread, pick the agent, and send — it will definitely reply
-- **Don't @ it, and it depends on its Reply mode**, which has three settings, defaulting to "When @-mentioned":
-  - **All messages** — it listens to and may reply to every message in the channel
-  - **When @-mentioned** (default) — it replies only when @-mentioned
-  - **Only me** — it responds only to messages from its creator
-  Expand the agent in the channel's member list to view/switch this (set per agent, per channel). The switch is visible only to the agent's creator / channel admins — regular members who expand the agent see only Message / View profile.
+- **Reply mode controls whether it replies** (new agents default to **Only me**):
+  - **All messages** — every human post wakes it
+  - **When @-mentioned** — @mentions, or a human follow-up right after its latest reply
+  - **Only me** — those same @mentions / follow-ups, but only from its creator
+  Expand the agent in the channel's member list to view its per-channel Reply mode; only the agent's creator can switch it — everyone else who expands the agent sees only Message / View profile.
 
   ![The three Reply mode settings for an agent in the member list](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48593/2fc01845.png)
-- **Solo exception**: when a channel or thread contains only you and one agent, it will reply even without an @
+- **Solo exception**: when a channel or thread contains only you and one agent, it will reply even without an @ (under "Only me", only if you are its creator)
 - @-mentioning a person just notifies them — it never triggers any AI reply
 
 ### 3. What you can have the agent do
@@ -55,10 +53,10 @@ Cloud agents come with Genspark's tools built in, so you can delegate directly. 
 
 The agent serves the whole channel, but it **acts as its creator** (spending the creator's credits, using the services the creator authorized), so its capabilities split into two tiers:
 
-- **Everyday capabilities, available to everyone**: research, writing docs and reports, making slides and sheets, analyzing shared files, handling tasks — anyone in the channel can have it do these
-- **Outward actions, only for the creator**: sending emails, posting to social media, messaging people on other platforms, making calls, and other actions that reach the outside world in the creator's name will only run when the creator themselves asks — the same request from anyone else is refused
+- **Everyday capabilities**: research, writing docs and reports, making slides and sheets, analyzing shared files, handling tasks — available to anyone its Reply mode permits (see step 2)
+- **Outward actions, only for the creator**: sending emails, posting to social media, messaging people on other platforms, making calls — these run only when the creator themselves asks; the same request from anyone else is refused
 
-Also, before doing anything hard to undo, the agent checks with the creator for confirmation first — **no response counts as a refusal**, and it won't act on its own.
+Also, before doing anything hard to undo, the agent asks for explicit human approval first — **no response counts as a refusal** (deleting its own message is the one exception: no ask, immediate).
 
 ### 5. Credits: who pays, how much, and what to do when they run out
 
@@ -95,10 +93,10 @@ Key points:
 ## FAQ
 
 **Q: The agent isn't replying to me — how do I troubleshoot?**
-The most common cause: the default Reply mode is "When @-mentioned," so it won't reply unless you @ it. Check in order: ① did you @ it in the message; ② what Reply mode is it on in this channel; ③ is it showing that it's waiting on you to answer a question — it can only continue once you answer; ④ stuck on "working" for a long time → Stop current work in its profile, then resend; ⑤ for a local agent, go to the Computers panel and confirm the computer is Connected; ⑥ still stuck? For an agent you created, click **Diagnose** and let Genny investigate and help fix it.
+The most common cause is its Reply mode (see step 2). Check in order: ① what mode it is on in this channel; ② whether your message matches that mode; ③ whether it's waiting on you to answer a question — it can only continue once you answer; ④ stuck on "working" for a long time → Stop current work in its profile, then resend; ⑤ for a local agent, go to the Computers panel and confirm the computer is Connected; ⑥ still stuck? For an agent you created, click **Diagnose** and let Genny investigate and help fix it.
 
 **Q: If I @ an agent someone else created, will it respond? Whose credits does it spend?**
-Yes. @ it and it always replies, and everyday capabilities like research and writing docs are available to everyone; but it spends **its creator's** credits, and for outward actions like sending emails it won't listen to you.
+It depends on its Reply mode (see step 2). If it answers you, everyday capabilities are available and its creator pays the credits; outward actions like sending emails still require the creator.
 
 **Q: A coworker can't open the result link the agent sent?**
 Things the agent produces as a Genspark project (like slides) are initially visible only to the creator — have the agent share the project with the channel and everyone can open it. Files sent directly as attachments don't have this issue.

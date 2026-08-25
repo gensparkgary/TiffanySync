@@ -2,13 +2,13 @@
 
 > For Buddy Agent internal use.
 > type: howto | feature: genteam | keywords: Computers, Add computer, connect computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, Claw, OpenClaw, no credits, working folder, code repo
-> User loop: left rail Members → Computers (top of the members list) → Add computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the channel and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
+> User loop: left rail Members → Computers (top of the members list) → Add computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the group chat and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
 
 ## Why run an agent on your own computer
 
 - **It doesn't consume Genspark credits** — this is the biggest selling point of this guide: the agent works using your own Claude Code / Codex subscription, or the compute on your own machine, so no matter how much it does in GenTeam, nothing is deducted from your Genspark balance (only "Hosted by Genspark" cloud agents consume credits when they work)
 - **Works directly in your local files and code repos**: point the agent at a project folder on your computer, and all of its reads, writes, edits, and outputs stay on your own machine
-- **If you already have a Claw or OpenClaw, you can "hire" it into the team in just a few steps**: it becomes a colleague that anyone in the channel can @-mention
+- **If you already have a Claw or OpenClaw, you can "hire" it into the team in just a few steps**: it becomes a colleague that anyone in the group chat can @-mention
 
 ## Prerequisites
 

@@ -2,11 +2,11 @@
 
 > For Buddy Agent internal use.
 > type: howto | feature: genteam | keywords: Members, Add contact, invite, invite, contact, contact request, Invite links, invite links, QR code, join request, External, remove members
-> User loop: Left rail Members → Add contact (search contacts / enter email / email invite) → or send invite link / QR code → recipient accepts / gets approved → collaborate together in a channel
+> User loop: Left rail Members → Add contact (search contacts / enter email / email invite) → or send invite link / QR code → recipient accepts / gets approved → collaborate together in a group chat
 
 ## Why Use Invitations
 
-- **Bring coworkers in so people and agents collaborate in the same channel**: GenTeam's value is in the "team" — you need people before you have a team
+- **Bring coworkers in so people and agents collaborate in the same group chat**: GenTeam's value is in the "team" — you need people before you have a team
 - **One link handles a whole group**: no need to send invites one by one — drop the link (or QR code) into a group chat and people join with a tap, and you can control expiration and headcount
 - **You decide who gets in**: email invites lock to the recipient's address, links can be revoked anytime, and join requests require approval
 
@@ -40,7 +40,7 @@ Click **Add contact**. The dialog has **a single unified search box** (enter a n
 Open **Settings** (your avatar at the bottom of the rail) → **Invite links** to create two types of links:
 
 - **Personal contact link**: the recipient opens the link and, after clicking **Connect** to confirm, becomes your contact
-- **Channel join link**: the recipient opens the link and joins the specified channel
+- **Group chat join link**: the recipient opens the link and joins the specified group chat
 
 Every link can be configured with:
 
@@ -49,7 +49,7 @@ Every link can be configured with:
 - **QR code**: generate a QR code to use by scanning with a phone
 - **Revoke** anytime, or **Edit** (change both expiration and headcount limit in one place)
 
-Each person can have up to 5 personal links per space, and each channel can have up to 5 channel links.
+Each person can have up to 5 personal links per space, and each group chat can have up to 5 group chat links.
 
 ![Invite links: expiration / headcount limit / QR code](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48597/f93e4c49.png)
 
@@ -69,7 +69,7 @@ Members from outside your organization carry an **External** tag, making them ea
 
 ### 7. Remove Members
 
-Only the **space owner** can remove members from a space; the owner themselves cannot be removed. At the channel level, the channel creator can add and remove channel members at any time.
+Only the **space owner** can remove members from a space; the owner themselves cannot be removed. At the group chat level, the group chat creator can add and remove its members at any time.
 
 ## FAQ
 
@@ -83,7 +83,7 @@ Email invites are valid for 7 days; once expired, just send a new one — or swi
 Anytime: go to Settings → Invite links and click Revoke on that link. The link stops working immediately; people who already joined are unaffected.
 
 **Q: Can I remove a member from the space?**
-Only the space owner can. If you're a channel creator, you can remove members from your channel, but not from the entire space.
+Only the space owner can. If you're a group chat creator, you can remove members from your group chat, but not from the entire space.
 
 **Q: Is adding agents also in this panel?**
 Yes — in the Agents section of the Members panel, click "+" to create an AI teammate. See [Creating agents](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-create-agents.md).
@@ -91,5 +91,5 @@ Yes — in the Agents section of the Members panel, click "+" to create an AI te
 ## Next Steps
 
 - [Create your first agent →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-create-agents.md)
-- [Build channels, bring in people and agents →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)
+- [Build group chats, bring in people and agents →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)
 - [Start 1:1 DMs with people/agents →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-threads-and-dms.md)

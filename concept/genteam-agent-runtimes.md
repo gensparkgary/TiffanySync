@@ -6,7 +6,7 @@
 
 ## Why you should understand "where it runs" first
 
-The first choice when creating an agent is **where it runs**. This choice decides: whether you need to configure anything, when the agent is online, whether you can swap the model later, which tools it can use, and who pays when it works. Once built, the agent works exactly the same way in channels — join a channel, receive DMs, claim tasks; the only difference is "where the work happens behind the scenes." 
+The first choice when creating an agent is **where it runs**. This choice decides: whether you need to configure anything, when the agent is online, whether you can swap the model later, which tools it can use, and who pays when it works. Once built, the agent works exactly the same way in group chats — join a group chat, receive DMs, claim tasks; the only difference is "where the work happens behind the scenes." 
 
 ## The four options at a glance
 
@@ -38,7 +38,7 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 
 **Online**: no online requirement — messages you send while offline queue up for it to process, and none are lost. 
 
-**Credit**: consumes the **creator's** credits while working; it won't start if the balance is insufficient, and if it runs out mid-task it stops and shows an "@{name} couldn't reply" card in the channel. 
+**Credit**: consumes the **creator's** credits while working; it won't start if the balance is insufficient, and if it runs out mid-task it stops and shows an "@{name} couldn't reply" card in the group chat. 
 
 ## On my own computer
 
@@ -55,7 +55,7 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 **How to build**: when creating an agent, choose **Connect OpenClaw**, then on the "Create Genspark Claw agent" page pick one of your own Claw computers from the CLAW VM list (requires OpenClaw mode) — deployment is automatic, no commands to type, and the agent goes online once deployment completes. 
 
 - One Claw computer hosts one GenTeam agent; the agent can only work while the Claw computer is online 
-- **What it can do**: everything your Claw assistant can do — now you can summon it right from a GenTeam channel 
+- **What it can do**: everything your Claw assistant can do — now you can summon it right from a GenTeam group chat 
 - **Credit**: no Genspark credits consumed (the Claw computer itself is a separately purchased Claw subscription) 
 
 ## External OpenClaw (your own OpenClaw)
@@ -69,14 +69,14 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 
 - **Not sure which to pick → Hosted by Genspark**: zero config, usable within seconds of creation, and the most fully featured (working files, Connectors, and built-in generation tools are exclusive to it)
 - Want the agent to work directly on your **local files or code repo** → On my own computer
-- **Already have a Claw computer** and want to bring it into your team channel → Managed Genspark Claw
+- **Already have a Claw computer** and want to bring it into your team group chat → Managed Genspark Claw
 - **Already running OpenClaw yourself** → External OpenClaw
 - Don't want to consume Genspark credits and already have your own CLI subscription or machine → any of the last three
 
 ## FAQ
 
-**Q: Is there any difference in using agents across runtimes within a channel?**
-No — they all join channels, receive DMs, and claim tasks the same way. The only difference is behind the scenes: which machine the work happens on, whose model is used, and whether Genspark credits are charged. 
+**Q: Is there any difference in using agents across runtimes within a group chat?**
+No — they all join group chats, receive DMs, and claim tasks the same way. The only difference is behind the scenes: which machine the work happens on, whose model is used, and whether Genspark credits are charged. 
 
 **Q: Which option consumes Genspark credits?**
 Only Hosted by Genspark cloud agents (charged to the creator). The other three use your own model or machine and consume no Genspark credits. 
@@ -91,5 +91,5 @@ There's a cap on the number of agents (higher on paid plans); the UI is the sour
 
 - [Create an agent (templates / Instructions / skills)](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-create-agents.md)
 - [Hands-on: connecting a computer and Claw / OpenClaw](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-computers-and-claw.md)
-- [Put an agent to work in a channel](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md)
+- [Put an agent to work in a group chat](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md)
 - [GenTeam product overview](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-overview.md)

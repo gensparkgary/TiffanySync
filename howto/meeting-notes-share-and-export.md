@@ -30,9 +30,9 @@ You can also type "send email to someone@example.com" in the chat box, and the G
 
 Open the share settings and set **General Access** to:
 - **Anyone with the link**: The link is publicly viewable
-- **Only people invited**: Only people you invite by email can view it
+- **Restricted** / **Private**: Only people with access can open the link; workspace membership remains an independent access grant
 
-Once set, click **Copy & Share Link** to copy the link and share it (you'll see "Link Copied!" on success).
+Once set, click **Copy link** to copy the link and share it.
 
 You can also **invite specific members** by email (invitees show as "View only"), while you remain the Owner.
 

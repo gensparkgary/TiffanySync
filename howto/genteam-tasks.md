@@ -6,7 +6,7 @@
 
 ## Why use the task list
 
-- **Requests discussed in a channel no longer vanish**: a single sentence becomes a task with a status and an owner—who's on it and how far along, all visible at a glance in the task list
+- **Requests discussed in a group chat no longer vanish**: a single sentence becomes a task with a status and an owner—who's on it and how far along, all visible at a glance in the task list
 - **Work handed to an agent is tracked automatically**: when an agent claims, progresses, or completes a task, it auto-posts to the task's thread, so you don't have to chase for updates
 - **No duplicated work**: a task has at most one owner, so two people (or two agents) won't each do the same thing twice
 
@@ -19,15 +19,15 @@
 
 ### 1. Create a task: two entry points
 
-- **Message as task**: after typing a message in the channel input, click the option next to the send button and choose **Send as task**—one action both sends the message and creates a task from it (every task originates from a message)
+- **Message as task**: after typing a message in the group chat input, click the option next to the send button and choose **Send as task**—one action both sends the message and creates a task from it (every task originates from a message)
 
   ![Send as task option next to the send button](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48595/dfde9b90.png)
 
-- **Create directly from the list**: use the channel-top tabs Chat | Files | **Tasks** to open the task list, then click **New task**. To see tasks across all channels, use the Space-level Tasks panel ("All channels")
+- **Create directly from the list**: use the tabs at the top of the group chat — Chat | Files | **Tasks** — to open the task list, then click **New task**. To see tasks across all group chats, use the Space-level Tasks panel ("All group chats")
 
 ### 2. Read the task list
 
-The Tasks tab is a **task list**, and every task has one of four statuses: **Todo / In Progress / In Review / Done**. Done covers both "completed" and "no longer needed" (the old separate Closed status was merged into Done). Two filters: the channel-level Tasks tab uses **For you | All** (scope) plus a **status dropdown** (Active / All statuses / each status); the Space-level Tasks panel (`/tasks`, aggregating all channels) uses **All | Active | Done** plus a **channel dropdown** (All channels / each channel).
+The Tasks tab is a **task list**, and every task has one of four statuses: **Todo / In Progress / In Review / Done**. Done covers both "completed" and "no longer needed" (the old separate Closed status was merged into Done). Two filters: the group-chat-level Tasks tab uses **For you | All** (scope) plus a **status dropdown** (Active / All statuses / each status); the Space-level Tasks panel (`/tasks`, aggregating all group chats) uses **All | Active | Done** plus a **group chat dropdown** (All group chats / each group chat).
 
 ![Task list: status filter and New task](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48595/1b76a36f.png)
 
@@ -43,7 +43,7 @@ The Tasks tab is a **task list**, and every task has one of four statuses: **Tod
 
 ### 4. Discuss in the task's thread
 
-Every task has its own discussion thread—post progress, intermediate artifacts, and results there to keep the main channel clean. The top of the thread has a task bar: a **status pill dropdown** (Todo / In Progress / In Review / Done), the #number and title with a rename pencil next to the title, and a standalone **Claim / Unclaim** button. (When creating via **New task**, the dialog also offers an Assignment dropdown: Don't claim / Claim for myself / Assign to your agent.) Every status change auto-posts to **this task's thread** (e.g. "{name} moved task #N to Done"), so opening a task shows you all the progress.
+Every task has its own discussion thread—post progress, intermediate artifacts, and results there to keep the group chat's main timeline clean. The top of the thread has a task bar: a **status pill dropdown** (Todo / In Progress / In Review / Done), the #number and title with a rename pencil next to the title, and a standalone **Claim / Unclaim** button. (When creating via **New task**, the dialog also offers an Assignment dropdown: Don't claim / Claim for myself / Assign to your agent.) Every status change auto-posts to **this task's thread** (e.g. "{name} moved task #N to Done"), so opening a task shows you all the progress.
 
 ![Task thread: status bar at the top + auto-posted status changes](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48595/71ea5469.png)
 
@@ -68,8 +68,8 @@ List actions (creating tasks, claiming, changing status, filtering) are all free
 **Q: How do I get notified when an agent finishes?**
 Every status change auto-posts to the task's thread, and the detailed progress and results are there too. You can also have the agent DM you a summary once it's done.
 
-**Q: How do I see all my tasks across every channel in one place?**
-Open the Space-level Tasks panel (at `/genteam/<your space>/tasks`, set the channel dropdown to "All channels") and filter with **All | Active | Done** plus the channel dropdown. To see what's "relevant to you," go back to a channel's Tasks tab and use **For you**.
+**Q: How do I see all my tasks across every group chat in one place?**
+Open the Space-level Tasks panel (at `/genteam/<your space>/tasks`, set the group chat dropdown to "All group chats") and filter with **All | Active | Done** plus the group chat dropdown. To see what's "relevant to you," go back to a group chat's Tasks tab and use **For you**.
 
 ## Next steps
 

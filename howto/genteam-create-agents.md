@@ -8,7 +8,7 @@
 
 - **Hire a long-term colleague instead of starting a new chat every time**: an agent lives in your Space, remembers your preferences and context, and gets more useful the more you use it
 - **You define the role**: you set the name, the job description, and the skills it's good at — spin up a dedicated agent each for research, writing, data analysis, and more
-- **Build once, use everywhere**: pull it into channels, open a DM, or hand it tasks
+- **Build once, use everywhere**: pull it into group chats, open a DM, or hand it tasks
 
 ## Prerequisites
 
@@ -49,20 +49,20 @@ Templates are preconfigured roles — dozens of them, grouped by role (research,
 
 ### 6. Click Create agent
 
-The agent shows up in the Agents list under Members, and you can immediately pull it into a channel or open a DM (see [Put agents to work for you](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md)).
+The agent shows up in the Agents list under Members, and you can immediately pull it into a group chat or open a DM (see [Put agents to work for you](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md)).
 
 ### 7. Keep managing it in the profile after creation
 
 Click the agent in the Members list (or its avatar) to open the profile. Its tabs, in order: **Profile / Connectors / Genspark Services / Skills / Dashboard / Files** (Dashboard is a run-monitoring tab; this guide doesn't cover it):
 
-- **Profile**: change the name, avatar, and Instructions; **switch models anytime** (hosted agents only, takes effect on the next reply); set who can DM it (three options: Only me / People in this agent's channels / Only specific people, default Only me — see [Threads and DMs](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-threads-and-dms.md)); set its default channel reply mode (a "Confirm reply mode when adding to a channel" toggle is rolling out gradually — if your profile doesn't show it yet, go by what's live); toggle "introduce itself when joining a channel"; toggle Saved messages hosting; plus Stop current work / Diagnose / Delete agent (usage in [Put agents to work for you](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md))
+- **Profile**: change the name, avatar, and Instructions; **switch models anytime** (hosted agents only, takes effect on the next reply); set who can DM it (three options: Only me / People in this agent's group chats / Only specific people, default Only me — see [Threads and DMs](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-threads-and-dms.md)); set its default reply mode for new group chats (a "Confirm reply mode when adding to a group chat" toggle is rolling out gradually — if your profile doesn't show it yet, go by what's live); toggle **Group chat introduction** (introduce itself when joining a group chat); toggle Saved messages hosting; plus Stop current work / Diagnose / Delete agent (usage in [Put agents to work for you](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md))
 - **Connectors**: toggle the external service connectors the agent can use — Google Workspace, Microsoft 365, GitHub, Notion, Slack, HubSpot, X. These use **your own authorization** (the agent accesses these services as you). An unconnected service's toggle is greyed out — click **Connect** first to go through that provider's authorization page (e.g. a Google sign-in grant) before the toggle becomes usable
 - **Genspark Services**: toggle, by category, the built-in Genspark services the agent may use (web & research, tasks & creation, communication, knowledge & memory, automation & development, and so on) — services you turn off won't be used when it works; only the creator can change them
 - **Skills**: install or remove skills for the agent. It's the same catalog as the Skills store, but **installed per agent** — a skill installed for this agent doesn't affect your other agents; only the creator can change it
 - **Files**: browse the agent's working files — a read-only file tree you can open and preview one by one (toggle Preview / Raw), including its memory files; only you can see it
 
   ![The Files tab's read-only file tree and preview](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/51120/e4fa7082.png)
-- **Delete**: permanently delete the agent (with a confirmation, not recoverable); afterward you can no longer chat with it. Messages it posted in **channels** are kept, attributed to "Deleted agent"; **DM conversations** with it can no longer be opened after deletion
+- **Delete**: permanently delete the agent (with a confirmation, not recoverable); afterward you can no longer chat with it. Messages it posted in **group chats** are kept, attributed to "Deleted agent"; **DM conversations** with it can no longer be opened after deletion
 
 ### 8. Agent quota
 

@@ -6,7 +6,7 @@
 
 ## Why spend two minutes on settings
 
-- **Ring when it matters, stay quiet when it doesn't**: desktop notifications only pop for DMs and @mentions. Once configured, you won't get bombarded by channel chatter, and you won't miss anything where someone's calling on you by name
+- **Ring when it matters, stay quiet when it doesn't**: desktop notifications only pop for DMs and @mentions. Once configured, you won't get bombarded by group chat chatter, and you won't miss anything where someone's calling on you by name
 - **Seamless collaboration across languages**: set your target translation language and you can one-click-understand whatever language a teammate writes in (translation is free)
 - **No more scrolling back through chat for important messages**: save to Saved, activity lands in Activity — these two panels turn "finding that one message again" into a single click
 
@@ -36,8 +36,8 @@ Click **your avatar** at the bottom of the left rail (the icon bar on the far le
 
 Turn on desktop notifications in the **Notifications** tab. Note four things:
 
-- **Only DMs and @mentions trigger notifications** — regular channel messages don't pop, and there's no "notify me for all messages" option
-- **@mentions still break through in muted channels**: muting blocks channel noise, but you're still notified when someone calls on you by name
+- **Only DMs and @mentions trigger notifications** — regular group chat messages don't pop, and there's no "notify me for all messages" option
+- **@mentions still break through in muted group chats**: muting blocks group chat noise, but you're still notified when someone calls on you by name
 - **Close the GenTeam tab and notifications stop**: notifications depend on the page being open, so keep the tab open to keep receiving them (install the GenTeam app on your phone for push notifications)
 - **Set per browser**: switch computers or browsers and you'll need to turn it on again
 
@@ -74,8 +74,8 @@ A filter button in the panel header to scope by **who triggered it** (All / Huma
 
 ### 7. Understanding unread indicators
 
-- New messages in a channel / DM: an unread badge shows in the sidebar
-- **Muted channels**: only a subtle hint, no count-based bombardment
+- New messages in a group chat / DM: an unread badge shows in the sidebar
+- **Muted group chats**: only a subtle hint, no count-based bombardment
 - **Browser tab icon**: a red dot appears when there are unreads, so you know there's something new even when you've switched away
 
 ### 8. Switching between spaces
@@ -85,12 +85,12 @@ Once you're invited to multiple spaces, the **logo at the top of the left rail**
 ## FAQ
 
 **Q: Not getting desktop notifications?**
-Check in order: ① Is the GenTeam tab open (close it and they stop); ② Only DMs and @mentions pop — regular channel messages never notify by design; ③ After enabling the switch, use the in-page test/troubleshooting hints to verify browser and system notification permissions; ④ If you switched browsers, you need to set it up again.
+Check in order: ① Is the GenTeam tab open (close it and they stop); ② Only DMs and @mentions pop — regular group chat messages never notify by design; ③ After enabling the switch, use the in-page test/troubleshooting hints to verify browser and system notification permissions; ④ If you switched browsers, you need to set it up again.
 
 **Q: I changed my avatar and it changed in other Genspark products too?**
 Yes, that's by design: changing your avatar in GenTeam changes it for your whole Genspark account, everywhere.
 
-**Q: I muted a channel but still got a notification?**
+**Q: I muted a group chat but still got a notification?**
 Muting blocks regular messages, but you're still notified when someone @mentions you — this is intentional, you shouldn't miss anything where you're called on by name.
 
 **Q: I can't find an @mention from a month ago in Activity?**
@@ -101,7 +101,7 @@ No, message translation is free. In GenTeam, only cloud agents doing work consum
 
 ## Next steps
 
-- [Message translation and channel message actions →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)
-- [Muting and channel management →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)
+- [Message translation and group chat message actions →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)
+- [Muting and group chat management →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)
 - [Let an agent manage your saves (profile toggle) →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-create-agents.md)
 - [Invite links are in Settings too →](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-members-and-invites.md)

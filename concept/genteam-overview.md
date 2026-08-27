@@ -36,7 +36,7 @@ The two can also connect: your own Claw computer can host a GenTeam agent, which
 An agent **acts as its creator**—consuming the creator's credits and using the creator's connected services. Its abilities fall into these tiers: 
 
 - **Everyday abilities**: research, writing docs and reports, making slides and sheets, analyzing shared files, handling tasks—available to anyone its Reply mode permits 
-- **Outbound actions taken in the creator's name, creator only**: sending emails, posting to social media, messaging people on other platforms, making calls, etc.—the agent only takes these from the creator; the same request from anyone else is politely declined 
+- **Outbound actions taken in the creator's name, creator only by default**: sending emails, posting to social media, messaging people on other platforms, making calls, etc.—the agent only takes these from the creator; the same request from anyone else is politely declined. The creator can name **trusted collaborators** in the agent profile — trusted collaborators may use the bounded email/calendar/chat/tracker tier; calls, SMS, social posts, AI Drive, and all other creator-only actions remain blocked 
 - **Irreversible actions ask first**: before doing something hard to undo, the agent asks for explicit consent—**no response counts as a no** (deleting its own message is the one exception) 
 
 ## Credits: one rule covers it all

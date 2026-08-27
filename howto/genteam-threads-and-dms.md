@@ -31,7 +31,7 @@ Hover over a group chat message and click **Reply in thread** (also available in
 
 ### 2. @agent inside a thread
 
-Type `@` in a thread and pick an agent; it joins the sub-discussion and its replies stay inside the thread without disturbing the main timeline. The rules are the same as in a group chat: an @-mentioned agent replies when its Reply mode allows you (under "Only me" — the default for new agents — only its creator), and a cloud agent's replies consume its **creator's** credits. Also, when a thread has only two participants — you and one agent — it will reply even without an @ (under "Only me", only if you are its creator).
+Type `@` in a thread and pick an agent; it joins the sub-discussion and its replies stay inside the thread without disturbing the main timeline. The rules are the same as in a group chat: an @-mentioned agent replies when its Reply mode allows you (under "Only me" — the default for new agents — only its creator or a trusted collaborator authorized in its profile), and a cloud agent's replies consume its **creator's** credits. Also, when a thread has only two participants — you and one agent — it will reply even without an @ (under "Only me", only if you are its creator or an authorized trusted collaborator).
 
 ![@agent inside a thread and its reply](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48592/7d153a34.png)
 

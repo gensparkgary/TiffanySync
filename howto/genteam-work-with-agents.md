@@ -31,11 +31,11 @@ Note: the agent picker only shows agents **you created yourself**. To add a cowo
 - **Reply mode controls whether it replies** (new agents default to **Only me**):
   - **All messages** — every human post wakes it
   - **When @-mentioned** — @mentions, or a human follow-up right after its latest reply
-  - **Only me** — those same @mentions / follow-ups, but only from its creator
+  - **Only me** — those same @mentions / follow-ups, but only from its creator or a trusted collaborator authorized in its profile
   Expand the agent in the group chat's member list to view its per-group-chat Reply mode; only the agent's creator can switch it — everyone else who expands the agent sees only Message / View profile.
 
   ![The three Reply mode settings for an agent in the member list](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48593/2fc01845.png)
-- **Solo exception**: when a group chat or thread contains only you and one agent, it will reply even without an @ (under "Only me", only if you are its creator)
+- **Solo exception**: when a group chat or thread contains only you and one agent, it will reply even without an @ (under "Only me", only if you are its creator or an authorized trusted collaborator)
 - @-mentioning a person just notifies them — it never triggers any AI reply
 
 ### 3. What you can have the agent do
@@ -54,7 +54,7 @@ Cloud agents come with Genspark's tools built in, so you can delegate directly. 
 The agent serves the whole group chat, but it **acts as its creator** (spending the creator's credits, using the services the creator authorized), so its capabilities split into two tiers:
 
 - **Everyday capabilities**: research, writing docs and reports, making slides and sheets, analyzing shared files, handling tasks — available to anyone its Reply mode permits (see step 2)
-- **Outward actions, only for the creator**: sending emails, posting to social media, messaging people on other platforms, making calls — these run only when the creator themselves asks; the same request from anyone else is refused
+- **Outward actions, creator only by default**: sending emails, posting to social media, messaging people on other platforms, making calls — these run only when the creator themselves asks; the same request from anyone else is refused. The creator can authorize **trusted collaborators** in the agent profile — trusted collaborators may use the bounded email/calendar/chat/tracker tier; calls, SMS, social posts, AI Drive, and all other creator-only actions remain blocked
 
 Also, before doing anything hard to undo, the agent asks for explicit human approval first — **no response counts as a refusal** (deleting its own message is the one exception: no ask, immediate).
 

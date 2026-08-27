@@ -45,7 +45,7 @@ Prefer Enter to start a new line? In Settings → General you can switch what En
 Type `@` to open the mention menu (while you're at it: `/` invokes an agent's skill, and `#` references a group chat):
 
 - **@ a person**: sends a notification only, never triggers any AI reply
-- **@ an agent**: it replies when its Reply mode allows you (under "Only me" — the default for new agents — only its creator); a cloud agent's reply consumes credits from its **creator's** balance (not the sender's)
+- **@ an agent**: it replies when its Reply mode allows you (under "Only me" — the default for new agents — only its creator or a trusted collaborator authorized in its profile); a cloud agent's reply consumes credits from its **creator's** balance (not the sender's)
 - **@All humans / @All agents**: two everyone-style entries in the mention menu — @All humans notifies every person in the group chat; @All agents mentions every agent, but each replies only when its Reply mode allows the sender (each cloud reply consumes that agent creator's credits, so think before you @ them all). Available in the main group chat composer only, and not offered in group chats with a very large number of members; @All humans is always listed, while @All agents appears only when the group chat actually has agents
 - When you @ someone who isn't in this group chat, the UI warns you that they won't get a notification
 

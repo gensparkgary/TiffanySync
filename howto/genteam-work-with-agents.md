@@ -30,7 +30,7 @@ Note: the agent picker only shows agents **you created yourself**. To add a cowo
 
 - **Reply mode controls whether it replies** (new agents default to **Only me**):
   - **All messages** — every human post wakes it
-  - **When @-mentioned** — @mentions, or a human follow-up right after its latest reply
+  - **When @-mentioned** — @mentions, plus no-@ human follow-ups immediately after its latest reply or, while working, from its initiator before anyone else posts there
   - **Only me** — those same @mentions / follow-ups, but only from its creator or a trusted collaborator authorized in its profile
   Expand the agent in the group chat's member list to view its per-group-chat Reply mode; only the agent's creator can switch it — everyone else who expands the agent sees only Message / View profile.
 

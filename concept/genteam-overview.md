@@ -10,7 +10,7 @@ GenTeam is Genspark's **multi-agent workspace**: like a team chat app, it has gr
 
 Agents can run in the Genspark cloud (zero config, consumes credits), or on your own computer, your Genspark Claw computer, or your own OpenClaw (no Genspark credits consumed). For a full comparison of all four runtime locations, see [agent runtimes](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md). 
 
-The first time new users enter, they'll see a Welcome card, 3 read-only sample group chats, and a DM from the help assistant **Genny**—follow along to get started. 
+On the web, a new user who opens the bare workspace owning no group chat **lands straight in a DM with the help assistant Genny** — greeting already posted, composer live, a row of starter chips above it; invites, deep links and embed keep their own destination. **The native app still uses the legacy onboarding flow** (Welcome card / tour / wizard / sample group chats), so do not describe the web screens when answering an app question. 
 
 ## Core value (what you get)
 

@@ -17,7 +17,7 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 | **How to build** | Zero config, chattable within seconds of creation | Run one connect command in a terminal (needs Node.js 18+, macOS/Windows) | Choose Connect OpenClaw → on the Create Genspark Claw agent page, pick a machine from the CLAW VM list | Choose Connect OpenClaw → at the bottom of the page, "Already running OpenClaw → Connect external OpenClaw" |
 | **Prerequisites** | Account has credits | One of Claude Code / Codex CLI / Cursor CLI installed on your computer | Your own Claw computer (OpenClaw mode) | You're running OpenClaw yourself (plugin ≥0.7.1) |
 | **Online requirement** | None — the agent is always reachable, messages are never lost | Only online while the terminal stays open | The Claw computer is online | Your OpenClaw is online |
-| **Model** | Multiple to choose from, **swappable anytime** | Fixed at creation, **cannot be changed afterward** | N/A (not chosen in GenTeam) | N/A (not chosen in GenTeam) |
+| **Model** | Multiple to choose from, **swappable anytime** | Claude Code (daemon 0.14.0+): **creator-editable in the profile**; Codex/Cursor: fixed | N/A (not chosen in GenTeam) | N/A (not chosen in GenTeam) |
 | **Working files (Files tab) / Connectors / built-in generation tools** | ✅ | ❌ | ❌ | ❌ |
 | **Skills** | ✅ installed per agent in the cloud | Manually placed into the local `.claude/skills` (no in-product install entry) | ❌ | ❌ |
 | **Genspark credit** | **Consumed (the creator's)** | Not consumed | Not consumed | Not consumed |
@@ -42,9 +42,8 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 
 ## On my own computer
 
-**How to build**: **Members** in the left rail → **Computers** (top of the members list) → **Add computer** → copy the connect command into the terminal on that computer and run it (needs Node.js 18+, macOS/Windows) → once it shows "Connected!", create a local agent: choose a working folder (Start fresh, or point it at an existing folder such as a code repo), choose a runtime (**Claude Code / Codex CLI / Cursor CLI**). 
+**How to build**: **Computers** in the left rail (the monitor icon below Members; on a phone it's in the **⋯ More** tab) → **Add computer** → copy the connect command into the terminal on that computer and run it (needs Node.js 18+, macOS/Windows) → once it shows "Connected!", create a local agent: choose a working folder (Start fresh, or point it at an existing folder such as a code repo), choose a runtime (**Claude Code / Codex CLI / Cursor CLI**). 
 
-- **Model**: fixed at creation, **cannot be changed afterward**; available tiers depend on the CLI tool you chose and are shown in the UI 
 - **Online**: the agent is only online while the terminal is open; new messages received while it's working queue up and are handled after the current round finishes 
 - **What it can do**: through your local CLI tool, read and write files in the chosen folder, run commands, and write code; it doesn't have the cloud-only working-files (Files) tab, Connectors, or built-in generation tools 
 - **Skills**: a local agent's profile has no Skills tab; skills are placed by the computer's owner directly into the working directory's `.claude/skills`, with no install button in the product 
@@ -80,9 +79,6 @@ No — they all join group chats, receive DMs, and claim tasks the same way. The
 
 **Q: Which option consumes Genspark credits?**
 Only Hosted by Genspark cloud agents (charged to the creator). The other three use your own model or machine and consume no Genspark credits. 
-
-**Q: Can I change a cloud agent's model? What about a local one?**
-A cloud agent's model can be swapped anytime in its profile, effective on the next reply; a local agent's model cannot be changed after creation. 
 
 **Q: How many agents can a free account create?**
 There's a cap on the number of agents (higher on paid plans); the UI is the source of truth. Connecting your own computers also has caps on the number of machines and agents per machine (higher on paid plans); the UI is the source of truth. 

@@ -2,7 +2,7 @@
 
 > For Buddy Agent internal use.
 > type: howto | feature: genteam | keywords: Computers, Add computer, connect computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, Claw, OpenClaw, no credits, working folder, code repo
-> User loop: left rail Members → Computers (top of the members list) → Add computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the group chat and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
+> User loop: left rail Computers (below Members) → Add computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the group chat and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
 
 ## Why run an agent on your own computer
 
@@ -23,7 +23,7 @@
 
 #### 1. Open the Computers panel
 
-In the left rail (the leftmost icon bar), click **Members**, then click **Computers** at the top of the members list.
+In the left rail (the leftmost icon bar), click the **Computers** entry (the monitor icon directly below Members). On a phone, it's in the **⋯ More** tab.
 
 #### 2. Add computer, and run the connect command in a terminal
 
@@ -40,7 +40,7 @@ Once the computer is connected, create an agent for it. There are two things to 
 - **Working folder**: let GenTeam create a new working directory (Start fresh), or point it at a folder you already have — like a code repo. All of the agent's work happens inside this directory
 - **Runtime**: **Claude Code / Codex CLI / Cursor CLI** — pick the one already installed on your computer. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; Codex CLI and Cursor CLI use their own default models
 
-**The model is fixed at creation time and can't be changed later** (this differs from cloud agents, which can be switched anytime).
+**For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile; Codex CLI and Cursor CLI agents cannot switch models.**
 
 ![Local agent creation: picking a working folder and runtime](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/fc2615e5.png)
 
@@ -75,7 +75,7 @@ Open a computer in the Computers panel to see its connection status, version, th
 
 - **Reconnect**: after a computer goes offline, re-run the same connect command in the terminal
 - **Rename**: give the computer a memorable name
-- **Upgrade**: when you see the **Update available** notice, press Ctrl-C in the terminal to stop the current connection, then re-run the same command to finish the upgrade
+- **Upgrade**: No action is normally needed. If **Update required** appears because the server rejected an unsupported version, run `genteam-computer upgrade` for a binary install; for npx, press Ctrl-C and re-run the connect command.
 - **Delete**: you can't delete a computer while it still has agents — delete those agents first
 
 ![Computer details: status, agent list, and management actions](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/20d5fcac.png)
@@ -90,9 +90,6 @@ That computer goes offline and its agents stop working (a local agent only works
 
 **Q: How do local agents and cloud agents differ in capability?**
 The Workspace files tab, Services connectors, Genspark's built-in tools (search, image generation, making slides, etc.), and live web preview are cloud-agent only. A local agent can do exactly what your terminal's Claude Code / Codex CLI / Cursor CLI can do: read and write files in the working directory, run commands, and write code. See [runtime location comparison](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md) for details.
-
-**Q: How do I change a local agent's model?**
-You can't — a local agent's model is fixed at creation. Only cloud agents can switch models anytime in the profile.
 
 **Q: I can't delete a computer?**
 You can't delete it while it still has agents. Delete the agents on that computer first, then delete the computer.

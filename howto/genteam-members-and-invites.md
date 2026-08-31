@@ -14,7 +14,7 @@ Everything in this guide is free and consumes no credits.
 
 ## Prerequisites
 
-- Entry point: https://www.genspark.ai/genteam/genspark (everyone collaborates in the shared default Genspark Space)
+- Entry point: https://www.genspark.ai/genteam/genspark (everyone collaborates in the same shared workspace)
 - Requirement: signed in to a Genspark account
 
 ## Steps
@@ -31,7 +31,7 @@ Click **Add contact**. The dialog has **a single unified search box** (enter a n
 
 - **Search existing contacts**: people who are already your contacts show as Already a contact — not finding someone doesn't mean they don't exist
 - **Enter a full email**: when someone is a Genspark user but not yet your contact, enter their full email address to send them a contact request
-- **Email invite**: when the email entered doesn't have a Genspark account yet, send an email invite directly (Send invite). The invite is **valid for 7 days**, and **only the invited email address can accept it** — forwarding it to someone else won't work
+- **Email invite**: when the email entered doesn't have a Genspark account yet, send an email invite directly (Send invite). The invite is **valid for 7 days**, and **only the invited email address can accept it**
 
 ![Add contact: unified search box (name/handle/email) and Invite via link](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48597/fbb32323.png)
 
@@ -49,7 +49,7 @@ Every link can be configured with:
 - **QR code**: generate a QR code to use by scanning with a phone
 - **Revoke** anytime, or **Edit** (change both expiration and headcount limit in one place)
 
-Each person can have up to 5 personal links per space, and each group chat can have up to 5 group chat links.
+Each person can have up to 5 personal links, and each group chat can have up to 5 group chat links.
 
 ![Invite links: expiration / headcount limit / QR code](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48597/f93e4c49.png)
 
@@ -57,9 +57,9 @@ Each person can have up to 5 personal links per space, and each group chat can h
 
 When someone sends you a contact request, it appears in the received requests list in the Members panel. **Approve** or **Reject** each one.
 
-### 5. Approve Join Requests (Space Owner)
+### 5. Approve Join Requests (Group Chat Admins)
 
-When someone requests to join, the space owner approves or rejects it in the **Received requests** section of the Members panel (the Members icon in the left rail shows an "N pending join request" badge as a reminder).
+When someone requests to join a group chat, one of that group chat's admins (the creator, plus any admins the creator appointed) approves or rejects it in the **Received requests** section of the Members panel (the Members icon in the left rail shows an "N pending join request" badge as a reminder).
 
 ![Received requests section: Approve / Reject each one](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48597/650fb71c.png)
 
@@ -69,7 +69,7 @@ Members from outside your organization carry an **External** tag, making them ea
 
 ### 7. Remove Members
 
-Only the **space owner** can remove members from a space; the owner themselves cannot be removed. At the group chat level, the group chat creator can add and remove its members at any time.
+There is no workspace-wide removal. At the group chat level, a **group chat admin** can add and remove members at any time.
 
 ## FAQ
 
@@ -77,13 +77,10 @@ Only the **space owner** can remove members from a space; the owner themselves c
 Member search only surfaces your own contacts. To add a new person, enter their full email directly, or send them an invite link.
 
 **Q: What if the email invite expired?**
-Email invites are valid for 7 days; once expired, just send a new one — or switch to an invite link (which can be set to last up to 180 days).
+Once expired, just send a new one — or switch to an invite link.
 
 **Q: Can I take back an invite link after sending it?**
 Anytime: go to Settings → Invite links and click Revoke on that link. The link stops working immediately; people who already joined are unaffected.
-
-**Q: Can I remove a member from the space?**
-Only the space owner can. If you're a group chat creator, you can remove members from your group chat, but not from the entire space.
 
 **Q: Is adding agents also in this panel?**
 Yes — in the Agents section of the Members panel, click "+" to create an AI teammate. See [Creating agents](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-create-agents.md).

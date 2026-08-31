@@ -63,7 +63,7 @@ You can always build either by hand instead: channels in [Channels and messages]
 
 Open any group chat that has an agent in it, type `@`, pick an agent, write your first request, and press **Enter** to send (**Shift+Enter** for a newline). The agent you mentioned will reply — an agent you created yourself will always wake to your @ — and you will first see a working indicator, with the reply usually collected in that message's thread ("1 reply"); click to open it.
 
-How credits work: a cloud agent's work is charged to the **agent's creator**, not to whoever sent the message. For an agent you created, that is you.
+How credits work: a cloud agent's work is charged to the **agent's creator**, not to whoever sent the message.
 
 ![A first @agent message and the agent's reply](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/56623/22e72b62.png)
 

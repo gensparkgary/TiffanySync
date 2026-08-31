@@ -23,11 +23,11 @@
 
   ![Send as task option next to the send button](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48595/dfde9b90.png)
 
-- **Create directly from the list**: use the tabs at the top of the group chat — Chat | Files | **Tasks** — to open the task list, then click **New task**. To see tasks across all group chats, use the Space-level Tasks panel ("All group chats")
+- **Create directly from the list**: use the tabs at the top of the group chat — Chat | Files | **Tasks** — to open the task list, then click **New task**
 
 ### 2. Read the task list
 
-The Tasks tab is a **task list**, and every task has one of four statuses: **Todo / In Progress / In Review / Done**. Done covers both "completed" and "no longer needed" (the old separate Closed status was merged into Done). Two filters: the group-chat-level Tasks tab uses **For you | All** (scope) plus a **status dropdown** (Active / All statuses / each status); the Space-level Tasks panel (`/tasks`, aggregating all group chats) uses **All | Active | Done** plus a **group chat dropdown** (All group chats / each group chat).
+The Tasks tab is a **task list**, and every task has one of four statuses: **Todo / In Progress / In Review / Done**. Done covers both "completed" and "no longer needed" (the old separate Closed status was merged into Done). Two filters: the group-chat-level Tasks tab uses **For you | All** (scope) plus a **status dropdown** (Active / All statuses / each status); the workspace-level Tasks panel (`/genteam/genspark/tasks`, aggregating all group chats) uses **All | Active | Done** plus a **group chat dropdown** (All group chats / each group chat).
 
 ![Task list: status filter and New task](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48595/1b76a36f.png)
 
@@ -49,27 +49,12 @@ Every task has its own discussion thread—post progress, intermediate artifacts
 
 ### 5. Complete or cancel
 
-When the work is done, move the task to **Done** (agent work usually goes to In Review first, waiting for your sign-off); if you decide not to do it, also move it to **Done**—Done means "finished", whether the work was completed or is no longer needed. Just click the status on the task to switch.
+When the work is done, move the task to **Done** (agent work usually goes to In Review first, waiting for your sign-off); if you decide not to do it, also move it to **Done**. Just click the status on the task to switch. You can also have the agent DM you a summary once it's done.
 
 ## FAQ
 
-**Q: Can I assign a task directly to a coworker?**
-No. People can only claim tasks themselves (Claim for myself) and can't be assigned by others—@ your coworker in the task thread and ask them to claim it.
-
 **Q: Can I assign a task to an agent someone else created?**
 No, Assign to your agent only lists agents you've created yourself. You can @ that agent in the task thread and ask it for help (its work consumes its creator's credits—see [Have an agent do the work for you](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md)).
-
-**Q: I assigned the wrong task, or the agent is stuck — how do I take the task back?**
-Use the **Unclaim** button on the task bar at the top of the task thread: you can release tasks you claimed yourself, and for tasks claimed by an agent you created you can release them on its behalf, then re-claim or re-assign.
-
-**Q: Do task actions cost credits?**
-List actions (creating tasks, claiming, changing status, filtering) are all free; credits are only consumed when a cloud agent actually does the work, and they come from that agent's creator.
-
-**Q: How do I get notified when an agent finishes?**
-Every status change auto-posts to the task's thread, and the detailed progress and results are there too. You can also have the agent DM you a summary once it's done.
-
-**Q: How do I see all my tasks across every group chat in one place?**
-Open the Space-level Tasks panel (at `/genteam/<your space>/tasks`, set the group chat dropdown to "All group chats") and filter with **All | Active | Done** plus the group chat dropdown. To see what's "relevant to you," go back to a group chat's Tasks tab and use **For you**.
 
 ## Next steps
 

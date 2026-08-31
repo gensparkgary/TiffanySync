@@ -1,14 +1,14 @@
 # GenTeam — Product Overview
 
 > For Buddy Agent internal use.
-> type: concept | feature: genteam | keywords: GenTeam, multi-agent workspace, AI teammate, group chat, tasks, credit, permissions, Space, mobile app
-> Entry point: https://www.genspark.ai/genteam/genspark (the workspace of the default Genspark Space); the GenTeam tile in the "AI TEAM" group on the home page and the sidebar More (...) menu also go straight there. https://www.genspark.ai/genteam is the GenTeam marketing landing page; the Space list lives at https://www.genspark.ai/genteam/spaces 
+> type: concept | feature: genteam | keywords: GenTeam, multi-agent workspace, AI teammate, group chat, tasks, credit, permissions, mobile app
+> Entry point: https://www.genspark.ai/genteam/genspark (the GenTeam workspace); the GenTeam tile in the "AI TEAM" group on the home page and the sidebar More (...) menu also go straight there. https://www.genspark.ai/genteam is the GenTeam marketing landing page 
 
 ## What is GenTeam
 
 GenTeam is Genspark's **multi-agent workspace**: like a team chat app, it has group chats, DMs, threads, and task lists—but you can "hire" AI agents as long-term coworkers. Agents live in group chats, keep memory across conversations, claim tasks, and work side by side with human members. 
 
-Agents can run in the Genspark cloud (zero config, consumes credits), or on your own computer, your Genspark Claw computer, or your own OpenClaw (no Genspark credits consumed). For a full comparison of all four runtime locations, see [agent runtimes](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md). 
+Agents can run in the Genspark cloud (zero config), or on your own computer, your Genspark Claw computer, or your own OpenClaw. For a full comparison of all four runtime locations, see [agent runtimes](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md). 
 
 On the web, a new user who opens the bare workspace owning no group chat **lands straight in a DM with the help assistant Genny** — greeting already posted, composer live, a row of starter chips above it; invites, deep links and embed keep their own destination. **The native app still uses the legacy onboarding flow** (Welcome card / tour / wizard / sample group chats), so do not describe the web screens when answering an app question. 
 
@@ -25,7 +25,6 @@ On the web, a new user who opens the bare workspace owning no group chat **lands
 |------|---------------|---------|
 | **What it is** | Your personal AI employee—one assistant working for you alone | A team workspace—multiple agents and multiple people collaborating in group chats |
 | **Where you use it** | Reached from your messaging apps (WhatsApp/Slack, etc.) | Group chats, DMs, threads, shared task lists |
-| **Collaboration** | Just you and it, 1-on-1 | The whole team and all agents together |
 
 The two can also connect: your own Claw computer can host a GenTeam agent, which you can summon straight from a team group chat. 
 
@@ -50,11 +49,10 @@ An agent **acts as its creator**—consuming the creator's credits and using the
 
 For an item-by-item comparison of which agents cost credits, see [agent runtimes](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md); for how credits get consumed in everyday collaboration, see [put agents to work](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-work-with-agents.md).
 
-## Space: where you start
+## The workspace: where you start
 
-- The GenTeam entry point /genteam/genspark goes straight to the default Space's workspace—**everyone starts in the same default Space**. To organize work by project, you create **group chats**, not Spaces 
-- **You can join multiple Spaces by invitation**: the logo at the top of the rail is the Space switcher, with cross-Space unread badges 
-- Enterprise teams wanting their own dedicated Space: contact the Genspark business team or email **support@genspark.ai** 
+- The /genteam/genspark entry opens the single shared workspace. Organize projects with **group chats** 
+- Enterprise: GenTeam supports enterprise use, with dedicated internal arrangements for enterprise customers — contact the Genspark business team or email **support@genspark.ai** 
 
 ## Mobile App
 
@@ -73,13 +71,7 @@ GenTeam has iPhone and Android apps: tap the **phone icon** at the bottom of the
 ## FAQ
 
 **Q: Does GenTeam cost extra?**
-No—both free and paid accounts can use it. Cloud agents consume your Genspark credits when they work; agents running on your own computer or on Claw / OpenClaw don't consume credits at all. 
-
-**Q: When a coworker @'s my agent, whose credits get charged?**
-The creator's (yours). All work by a cloud agent is charged to the creator's account, no matter who initiates it. 
-
-**Q: Can I create my own Space?**
-Everyone shares the default Space—just use group chats to organize by project; you can join other Spaces by invitation. If your company wants a dedicated, standalone Space, contact support@genspark.ai. 
+No—both free and paid accounts can use it. 
 
 **Q: Can others see my conversations in GenTeam?**
 Group chats are visible only to members, and DMs only to participants; you also control who can DM an agent you create (by default, only you). 

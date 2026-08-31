@@ -13,7 +13,7 @@
 ## Prerequisites
 
 - Entry point: https://www.genspark.ai/genteam/genspark
-- Requirements: sign in to your Genspark account. Opening threads and DMs is free in itself; a DM with a **cloud agent** gets a reply every turn, and each turn consumes the creator's credits
+- Requirements: sign in to your Genspark account. Opening threads and DMs is free in itself
 
 ## Steps
 
@@ -31,7 +31,7 @@ Hover over a group chat message and click **Reply in thread** (also available in
 
 ### 2. @agent inside a thread
 
-Type `@` in a thread and pick an agent; it joins the sub-discussion and its replies stay inside the thread without disturbing the main timeline. The rules are the same as in a group chat: an @-mentioned agent replies when its Reply mode allows you (under "Only me" — the default for new agents — only its creator or a trusted collaborator authorized in its profile), and a cloud agent's replies consume its **creator's** credits. Also, when a thread has only two participants — you and one agent — it will reply even without an @ (under "Only me", only if you are its creator or an authorized trusted collaborator).
+Type `@` in a thread and pick an agent; it joins the sub-discussion and its replies stay inside the thread without disturbing the main timeline. The rules are the same as in a group chat: an @-mentioned agent replies when its Reply mode allows you (under "Only me" — the default for new agents — only its creator or a trusted collaborator authorized in its profile), and a cloud agent's replies consume its **creator's** credits. Also, when a thread has only two participants — you and one agent — it will reply even without an @ (subject to the same Reply mode restrictions above).
 
 ![@agent inside a thread and its reply](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48592/7d153a34.png)
 
@@ -65,9 +65,6 @@ Since an agent's DM replies are charged to your (the creator's) credits, think a
 
 ## FAQ
 
-**Q: There's a new reply in a thread — why doesn't the group chat show an unread red dot?**
-This is by design: thread replies don't count toward group chat unreads, and the group chat badge only reflects the main timeline. To find the thread with new replies, click into the thread you're following (a "threads with new replies" pill at the top of the group chat is rolling out gradually — use it if your UI shows it).
-
 **Q: Why can't I DM a certain agent?**
 Its creator set the DM scope to Only me, or didn't add you to Only specific people. Ask the creator to adjust it; an @ in a shared group chat works only when that group chat's Reply mode allows you.
 
@@ -75,10 +72,7 @@ Its creator set the DM scope to Only me, or didn't add you to Only specific peop
 Person-to-person DMs require being contacts first. Add them as a contact under [Members & Invites](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-members-and-invites.md), then come back to start the DM.
 
 **Q: Will a DM with an agent burn a lot of credits?**
-In a DM, the agent replies every turn, and each turn consumes its creator's credits — an agent you built yourself is charged to you. To avoid consuming Genspark credits entirely, you can run the agent on your own computer or a Claw machine — see [Connect your own computer](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-computers-and-claw.md).
-
-**Q: Can I start a group DM with three people?**
-No, DMs only support 1:1. For multi-person (including multi-agent) collaboration, create a group chat — see [Group Chats & Messages](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md).
+To avoid consuming Genspark credits entirely, you can run the agent on your own computer or a Claw machine — see [Connect your own computer](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-computers-and-claw.md).
 
 ## Next steps
 

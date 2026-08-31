@@ -20,9 +20,9 @@
 
 Open a group chat, click the group chat header to open the **Group chat details** panel, then click **Add members to group chat** — both people and agents are added here. You can also check off an agent right when you create a group chat.
 
-A join-settings confirm step is rolling out gradually: once it reaches you, adding an agent to a group chat first asks you to confirm — one agent at a time — two things: how it should reply in that group chat (the three Reply mode settings from the next step, preselected to the agent's default), and whether it posts a self-introduction when it joins (preselected to the **Group chat introduction** toggle in its profile). The agent only joins after you confirm, both choices apply to that join only, and the step appears every time — there is no "don't ask again". If your UI doesn't show this step yet, the agent simply joins right away — go by what's live.
+A join-settings confirm step is rolling out gradually: once it reaches you, adding an agent to a group chat first asks you to confirm — one agent at a time — two things: how it should reply in that group chat (the three Reply mode settings from the next step, preselected to the agent's default), and whether it posts a self-introduction when it joins (preselected to the **Group chat introduction** toggle in its profile). The agent only joins after you confirm, both choices apply to that join only, and the step appears every time. If your UI doesn't show this step yet, the agent simply joins right away — go by what's live.
 
-Note: the agent picker only shows agents **you created yourself**. To add a coworker's agent, have that coworker do it. Also, the group chat creator can turn off "Allow members to add agents" (on by default) in Group chat details — once off, only the group chat creator can add agents.
+Note: the agent picker only shows agents **you created yourself**. To add a coworker's agent, have that coworker do it. Also, a group chat admin can turn off "Allow members to add agents" (on by default) in Group chat details — once off, only group chat admins can add agents.
 
 ![Group chat details → Add members to group chat; the agent list only shows agents you created](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48593/93385beb.png)
 
@@ -30,8 +30,8 @@ Note: the agent picker only shows agents **you created yourself**. To add a cowo
 
 - **Reply mode controls whether it replies** (new agents default to **Only me**):
   - **All messages** — every human post wakes it
-  - **When @-mentioned** — @mentions, plus no-@ human follow-ups immediately after its latest reply or, while working, from its initiator before anyone else posts there
-  - **Only me** — those same @mentions / follow-ups, but only from its creator or a trusted collaborator authorized in its profile
+  - **When @-mentioned** — only when explicitly @-mentioned; a message without an @ is never delivered to it
+  - **Only me** — those same @mentions, but only from its creator or a trusted collaborator authorized in its profile
   Expand the agent in the group chat's member list to view its per-group-chat Reply mode; only the agent's creator can switch it — everyone else who expands the agent sees only Message / View profile.
 
   ![The three Reply mode settings for an agent in the member list](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48593/2fc01845.png)
@@ -81,22 +81,19 @@ Click the agent in the Members list (or its avatar anywhere) to open the agent p
 
 An agent can run work automatically on a schedule — say, compiling a summary every morning. Two ways to set one up:
 
-- In your **DM with the agent, just ask in natural language** ("every day at 9…") and it creates a scheduled task for itself
-- Or click the **Scheduled tasks** button at the top of the agent's DM (there's also a Scheduled section in the agent profile) and create one in the panel: give it a title, describe what to do, and pick when it runs (once / daily / weekly)
+- In your **DM with the agent, just ask in natural language** ("every day at 9…") and it creates a scheduled task for itself (this path supports once / daily / weekly; create hourly ones in the panel)
+- Or click the **Scheduled tasks** button at the top of the agent's DM (there's also a Scheduled section in the agent profile) and create one in the panel: give it a title, describe what to do, and pick when it runs (once / hourly / daily / weekly)
 
 Key points:
 
 - Only the agent's **creator** can create scheduled tasks for it; each run's results are posted into your conversation with the agent
-- Every scheduled run of a cloud agent uses your credits (the panel says so too); agents running on your own computer / Claw / OpenClaw support scheduled tasks as well — no Genspark credits, but that computer/machine must be online when the run fires
+- Every scheduled run of a cloud agent uses your credits (the panel says so too); agents running on your own computer / Claw / OpenClaw support scheduled tasks as well, but that computer/machine must be online when the run fires
 - If a run fails, you're told why in the conversation; after several failures in a row the schedule stops itself — fix the cause, then press **Resume** in the Scheduled tasks panel
 
 ## FAQ
 
 **Q: The agent isn't replying to me — how do I troubleshoot?**
 The most common cause is its Reply mode (see step 2). Check in order: ① what mode it is on in this group chat; ② whether your message matches that mode; ③ whether it's waiting on you to answer a question — it can only continue once you answer; ④ stuck on "working" for a long time → Stop current work in its profile, then resend; ⑤ for a local agent, go to the Computers panel and confirm the computer is Connected; ⑥ still stuck? For an agent you created, click **Diagnose** and let Genny investigate and help fix it.
-
-**Q: If I @ an agent someone else created, will it respond? Whose credits does it spend?**
-It depends on its Reply mode (see step 2). If it answers you, everyday capabilities are available and its creator pays the credits; outward actions like sending emails still require the creator.
 
 **Q: A coworker can't open the result link the agent sent?**
 Things the agent produces as a Genspark project (like slides) are initially visible only to the creator — have the agent share the project with the group chat and everyone can open it. Files sent directly as attachments don't have this issue.

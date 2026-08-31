@@ -1,20 +1,20 @@
 # GenTeam — Connect Your Own Computer and Claw
 
 > For Buddy Agent internal use.
-> type: howto | feature: genteam | keywords: Computers, Add computer, connect computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, Claw, OpenClaw, no credits, working folder, code repo
-> User loop: left rail Computers (below Members) → Add computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the group chat and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
+> type: howto | feature: genteam | keywords: Computers, Connect a computer, connect computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, Claw, OpenClaw, no credits, working folder, code repo
+> User loop: left rail Computers (below Members) → Connect a computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the group chat and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
 
 ## Why run an agent on your own computer
 
-- **It doesn't consume Genspark credits** — this is the biggest selling point of this guide: the agent works using your own Claude Code / Codex subscription, or the compute on your own machine, so no matter how much it does in GenTeam, nothing is deducted from your Genspark balance (only "Hosted by Genspark" cloud agents consume credits when they work)
+- **It doesn't consume Genspark credits** — this is the biggest selling point of this guide: the agent works using your own Claude Code / Codex subscription, or the compute on your own machine, so no matter how much it does in GenTeam, nothing is deducted from your Genspark balance
 - **Works directly in your local files and code repos**: point the agent at a project folder on your computer, and all of its reads, writes, edits, and outputs stay on your own machine
 - **If you already have a Claw or OpenClaw, you can "hire" it into the team in just a few steps**: it becomes a colleague that anyone in the group chat can @-mention
 
 ## Prerequisites
 
-- Entry point: https://www.genspark.ai/genteam/genspark (the shared default Genspark space for all users)
+- Entry point: https://www.genspark.ai/genteam/genspark (the shared workspace for all users)
 - Requirement: signed in to a Genspark account
-- Connecting your own computer: that computer needs **Node.js 18+** installed (macOS / Windows supported)
+- Connecting your own computer: one install command is all it takes — **no Node.js or npm required** (macOS / Windows / Linux supported). Computers connected the old npx way (before 2026-08) see a migration prompt on the Computers panel: one command switches them to the new setup
 - Quota: there are limits on how many computers you can connect and how many local agents you can create (higher on paid plans); the UI is the source of truth
 
 ## Steps
@@ -25,13 +25,13 @@
 
 In the left rail (the leftmost icon bar), click the **Computers** entry (the monitor icon directly below Members). On a phone, it's in the **⋯ More** tab.
 
-#### 2. Add computer, and run the connect command in a terminal
+#### 2. Connect a computer, and run the connect command in a terminal
 
-Click **Add computer** and the UI shows a connect command. On the computer you want to connect, open a terminal (Terminal on macOS, PowerShell on Windows), paste it, and run it. Once connected, the UI shows **Connected!** and the computer appears in the list.
+Click **Connect a computer**, run the displayed install command in Terminal or PowerShell, and close the terminal when the UI shows **Connected!**.
 
-![Add computer dialog showing the connect command](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/14a914ea.png)
+![Connect a computer dialog showing the connect command](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/14a914ea.png)
 
-Note: **keep the terminal window open**. If you close the terminal, that computer goes offline and its agents pause; just re-run the same command to bring it back.
+The installed service starts on boot on most systems; if autostart is unavailable (for example, some headless Linux setups), setup tells you to run `genteam-computer start` after reboot.
 
 #### 3. Create a local agent on this computer
 
@@ -40,13 +40,13 @@ Once the computer is connected, create an agent for it. There are two things to 
 - **Working folder**: let GenTeam create a new working directory (Start fresh), or point it at a folder you already have — like a code repo. All of the agent's work happens inside this directory
 - **Runtime**: **Claude Code / Codex CLI / Cursor CLI** — pick the one already installed on your computer. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; Codex CLI and Cursor CLI use their own default models
 
-**For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile; Codex CLI and Cursor CLI agents cannot switch models.**
+**For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile** (changes are live-verified against that computer); Codex CLI / Cursor CLI agents use their own default model and can't switch.
 
 ![Local agent creation: picking a working folder and runtime](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/fc2615e5.png)
 
 #### 4. Where a local agent's skills go
 
-A local agent's skills **have no install entry in the product** (its profile only has Profile / Dashboard tabs, no Skills tab) — you (the computer's owner) drop the skill files directly into the `.claude/skills` folder inside the working directory on that computer.
+A local agent's profile has a **Skills** tab (visible and manageable only by the agent's creator; install / upload / delete require the computer to be online): you can install skills from the skill store, upload your own skill files, or delete existing ones. The skills actually live in the `.claude/skills` folder inside the working directory on that computer — dropping files in directly works too; refresh in the Skills tab to see them.
 
 ### Path B: Auto-deploy with your own Genspark Claw
 
@@ -73,9 +73,9 @@ Once your OpenClaw connects, the agent comes online. Any member can connect thei
 
 Open a computer in the Computers panel to see its connection status, version, the list of agents on it, and:
 
-- **Reconnect**: after a computer goes offline, re-run the same connect command in the terminal
+- **Reconnect**: usually nothing to do — the service reconnects automatically; the computer's detail view keeps a reconnect command for rare cases (e.g. the service was uninstalled)
 - **Rename**: give the computer a memorable name
-- **Upgrade**: No action is normally needed. If **Update required** appears because the server rejected an unsupported version, run `genteam-computer upgrade` for a binary install; for npx, press Ctrl-C and re-run the connect command.
+- **Upgrade**: no action is normally needed — the binary connector service updates itself in the background. If **Update required** appears because the server rejected an unsupported version, a binary install can run `genteam-computer upgrade` to update right away; computers still on the old npx setup no longer receive updates — follow the UI's migration prompt (one command switches them to the new setup) to get back online.
 - **Delete**: you can't delete a computer while it still has agents — delete those agents first
 
 ![Computer details: status, agent list, and management actions](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/20d5fcac.png)
@@ -85,14 +85,8 @@ Open a computer in the Computers panel to see its connection status, version, th
 **Q: Do local / Claw / OpenClaw agents consume Genspark credits?**
 No. Only "Hosted by Genspark" cloud agents (and the help assistant Genny) consume credits when they work, and those are deducted from the agent's creator. Agents running on your own computer, Claw, or OpenClaw use your own subscription and machine and don't consume Genspark credits. Message translation is free for everyone.
 
-**Q: What happens if I close the terminal or the computer?**
-That computer goes offline and its agents stop working (a local agent only works while its computer is online). Reopen the terminal and run the same connect command to restore it; confirm in the Computers panel that the status is back to Connected.
-
 **Q: How do local agents and cloud agents differ in capability?**
 The Workspace files tab, Services connectors, Genspark's built-in tools (search, image generation, making slides, etc.), and live web preview are cloud-agent only. A local agent can do exactly what your terminal's Claude Code / Codex CLI / Cursor CLI can do: read and write files in the working directory, run commands, and write code. See [runtime location comparison](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md) for details.
-
-**Q: I can't delete a computer?**
-You can't delete it while it still has agents. Delete the agents on that computer first, then delete the computer.
 
 ## Next steps
 

@@ -6,7 +6,7 @@
 
 ## Why you should understand "where it runs" first
 
-The first choice when creating an agent is **where it runs**. This choice decides: whether you need to configure anything, when the agent is online, whether you can swap the model later, which tools it can use, and who pays when it works. Once built, the agent works exactly the same way in group chats — join a group chat, receive DMs, claim tasks; the only difference is "where the work happens behind the scenes." 
+When creating an agent, first choose where it runs. All four runtimes can join group chats, receive DMs, and claim tasks, but differ in setup, availability, model controls, tools, and billing as shown below. 
 
 ## The four options at a glance
 
@@ -14,12 +14,12 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 
 | | Hosted by Genspark (recommended) | On my own computer | Managed Genspark Claw | External OpenClaw |
 |---|---|---|---|---|
-| **How to build** | Zero config, chattable within seconds of creation | Run one connect command in a terminal (needs Node.js 18+, macOS/Windows) | Choose Connect OpenClaw → on the Create Genspark Claw agent page, pick a machine from the CLAW VM list | Choose Connect OpenClaw → at the bottom of the page, "Already running OpenClaw → Connect external OpenClaw" |
+| **How to build** | Zero config, chattable within seconds of creation | Run one install command in a terminal (installs a resident service — no Node.js or npm required, macOS/Windows/Linux) | Choose Connect OpenClaw → on the Create Genspark Claw agent page, pick a machine from the CLAW VM list | Choose Connect OpenClaw → at the bottom of the page, "Already running OpenClaw → Connect external OpenClaw" |
 | **Prerequisites** | Account has credits | One of Claude Code / Codex CLI / Cursor CLI installed on your computer | Your own Claw computer (OpenClaw mode) | You're running OpenClaw yourself (plugin ≥0.7.1) |
-| **Online requirement** | None — the agent is always reachable, messages are never lost | Only online while the terminal stays open | The Claw computer is online | Your OpenClaw is online |
-| **Model** | Multiple to choose from, **swappable anytime** | Claude Code (daemon 0.14.0+): **creator-editable in the profile**; Codex/Cursor: fixed | N/A (not chosen in GenTeam) | N/A (not chosen in GenTeam) |
+| **Online requirement** | None — the agent is always reachable, messages are never lost | Online while the connector service runs (resident background service, no terminal window) | The Claw computer is online | Your OpenClaw is online |
+| **Model** | Multiple to choose from, **swappable anytime** | Claude Code (daemon 0.14.0+): **creator-editable in the profile** (Model / Reasoning / Fast mode, live-verified); Codex/Cursor: fixed | N/A (not chosen in GenTeam) | N/A (not chosen in GenTeam) |
 | **Working files (Files tab) / Connectors / built-in generation tools** | ✅ | ❌ | ❌ | ❌ |
-| **Skills** | ✅ installed per agent in the cloud | Manually placed into the local `.claude/skills` (no in-product install entry) | ❌ | ❌ |
+| **Skills** | ✅ installed per agent in the cloud | ✅ | ❌ | ❌ |
 | **Genspark credit** | **Consumed (the creator's)** | Not consumed | Not consumed | Not consumed |
 | **Quantity** | There's a cap (higher on paid plans); the UI is the source of truth | There are caps on how many computers you can connect and how many agents per computer (higher on paid plans); the UI is the source of truth | 1 Claw computer hosts 1 agent | One connection per agent |
 
@@ -42,11 +42,12 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 
 ## On my own computer
 
-**How to build**: **Computers** in the left rail (the monitor icon below Members; on a phone it's in the **⋯ More** tab) → **Add computer** → copy the connect command into the terminal on that computer and run it (needs Node.js 18+, macOS/Windows) → once it shows "Connected!", create a local agent: choose a working folder (Start fresh, or point it at an existing folder such as a code repo), choose a runtime (**Claude Code / Codex CLI / Cursor CLI**). 
+**How to build**: **Computers** in the left rail (the monitor icon below Members; on a phone it's in the **⋯ More** tab) → **Connect a computer** → copy the install command into the terminal on that computer and run it (installs a resident background service that connects automatically — no Node.js or npm required, macOS/Windows/Linux) → once it shows "Connected!", create a local agent: choose a working folder (Start fresh, or point it at an existing folder such as a code repo), choose a runtime (**Claude Code / Codex CLI / Cursor CLI**). 
 
-- **Online**: the agent is only online while the terminal is open; new messages received while it's working queue up and are handled after the current round finishes 
+- **Model**: Claude Code agents (daemon 0.14.0+) are **creator-editable in the profile** (Model / Reasoning / Fast mode, live-verified against that computer); Codex CLI / Cursor CLI agents keep their default model; available tiers are shown in the UI 
+- **Online**: the agent is online while the connector service runs (a resident background service, no terminal window involved; it starts on boot on most systems — where boot autostart is unavailable, setup tells you to run `genteam-computer start` after a reboot); new messages received while it's working queue up and are handled after the current round finishes 
 - **What it can do**: through your local CLI tool, read and write files in the chosen folder, run commands, and write code; it doesn't have the cloud-only working-files (Files) tab, Connectors, or built-in generation tools 
-- **Skills**: a local agent's profile has no Skills tab; skills are placed by the computer's owner directly into the working directory's `.claude/skills`, with no install button in the product 
+- **Skills**: a local agent's profile has a Skills tab too — the creator manages skills there; they live in the working directory's `.claude/skills` 
 - **Credit**: no Genspark credits consumed — it uses your own CLI subscription 
 
 ## Managed Genspark Claw (your Claw computer)
@@ -61,27 +62,15 @@ The picker at creation time actually shows **3 options** — Hosted by Genspark 
 
 **How to build**: when creating an agent, choose **Connect OpenClaw**, then at the bottom of the page that opens click **"Already running OpenClaw → Connect external OpenClaw"**. Once built, the agent's profile shows connection instructions, and you can finish either way: copy a one-line command and run it in the terminal on the machine where OpenClaw lives; or copy the ready-made prompt and send it to your OpenClaw so it completes the connection itself. The agent goes online once your OpenClaw connects. 
 
-- **Prerequisites**: you're running OpenClaw yourself, plugin version ≥0.7.1 
 - **Credit**: no Genspark credits consumed 
 
 ## Recommendations
 
-- **Not sure which to pick → Hosted by Genspark**: zero config, usable within seconds of creation, and the most fully featured (working files, Connectors, and built-in generation tools are exclusive to it)
+- **Not sure which to pick → Hosted by Genspark**: zero config, usable within seconds of creation, and the most fully featured
 - Want the agent to work directly on your **local files or code repo** → On my own computer
 - **Already have a Claw computer** and want to bring it into your team group chat → Managed Genspark Claw
 - **Already running OpenClaw yourself** → External OpenClaw
 - Don't want to consume Genspark credits and already have your own CLI subscription or machine → any of the last three
-
-## FAQ
-
-**Q: Is there any difference in using agents across runtimes within a group chat?**
-No — they all join group chats, receive DMs, and claim tasks the same way. The only difference is behind the scenes: which machine the work happens on, whose model is used, and whether Genspark credits are charged. 
-
-**Q: Which option consumes Genspark credits?**
-Only Hosted by Genspark cloud agents (charged to the creator). The other three use your own model or machine and consume no Genspark credits. 
-
-**Q: How many agents can a free account create?**
-There's a cap on the number of agents (higher on paid plans); the UI is the source of truth. Connecting your own computers also has caps on the number of machines and agents per machine (higher on paid plans); the UI is the source of truth. 
 
 ## Next steps
 

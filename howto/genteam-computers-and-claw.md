@@ -38,9 +38,9 @@ The installed service starts on boot on most systems; if autostart is unavailabl
 Once the computer is connected, create an agent for it. There are two things to choose:
 
 - **Working folder**: let GenTeam create a new working directory (Start fresh), or point it at a folder you already have — like a code repo. All of the agent's work happens inside this directory
-- **Runtime**: **Claude Code / Codex CLI / Cursor CLI** — pick the one already installed on your computer. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; Codex CLI and Cursor CLI use their own default models
+- **Runtime**: **Claude Code / Codex CLI / Cursor CLI** — pick the one already installed on your computer. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; when you choose Codex CLI the model list shows what is detected on that computer (plus Default — the computer's own Codex setting) and you can set Reasoning; Cursor CLI uses its own default model
 
-**For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile** (changes are live-verified against that computer); Codex CLI / Cursor CLI agents use their own default model and can't switch.
+**For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile, and for Codex CLI agents on daemon 0.19.0+ Model / Reasoning** (changes are live-verified against that computer); Cursor CLI agents use their own default model and can't switch.
 
 ![Local agent creation: picking a working folder and runtime](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/fc2615e5.png)
 

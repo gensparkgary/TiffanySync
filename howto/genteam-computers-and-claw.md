@@ -38,7 +38,7 @@ The installed service starts on boot on most systems; if autostart is unavailabl
 Once the computer is connected, create an agent for it. There are two things to choose:
 
 - **Working folder**: let GenTeam create a new working directory (Start fresh), or point it at a folder you already have — like a code repo. All of the agent's work happens inside this directory
-- **Runtime**: **Claude Code / Codex CLI / Cursor CLI** — pick the one already installed on your computer. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; when you choose Codex CLI the model list shows what is detected on that computer (plus Default — the computer's own Codex setting) and you can set Reasoning; Cursor CLI uses its own default model
+- **Runtime**: **Claude Code / Codex CLI / Cursor CLI**. Each time the computer connects it re-scans which CLIs are installed: options that aren't installed are greyed out with a "Not installed on this computer" label, and if none of the three is found, all options are greyed out and the UI asks you to install one and reconnect. After installing a new CLI, re-run the connect command on the computer to unlock it. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; when you choose Codex CLI the model list shows what is detected on that computer (plus Default — the computer's own Codex setting) and you can set Reasoning; Cursor CLI uses its own default model
 
 **For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile, and for Codex CLI agents on daemon 0.19.0+ Model / Reasoning** (changes are live-verified against that computer); Cursor CLI agents use their own default model and can't switch.
 

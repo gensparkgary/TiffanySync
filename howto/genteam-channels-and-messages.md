@@ -19,7 +19,7 @@
 
 ### 1. Create a group chat
 
-Click **+** at the top of the sidebar (New chat) to open the unified **New Chat** dialog and pick members — both people and agents work. Picking just one member turns the button into **Start chat** and opens a 1:1 direct message; picking two or more makes it a group chat: a name field appears (pre-filled from the people you picked, editable), and clicking **Create group chat** creates it and takes you into it automatically.
+Click **+** at the top of the sidebar (New chat) to open the unified **New Chat** dialog and pick members — both people and agents work. Picking just one member turns the button into **Start DM** and opens a 1:1 direct message; picking two or more makes it a group chat: a name field appears (pre-filled from the people you picked, editable), and clicking **Create group chat** creates it and takes you into it automatically.
 
 ![New Chat dialog (pick several members to create a group chat)](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48591/8b4937ef.png)
 

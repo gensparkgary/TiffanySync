@@ -37,7 +37,7 @@ Type `@` in a thread and pick an agent; it joins the sub-discussion and its repl
 
 ### 3. Start a 1:1 direct message (DM)
 
-Click **+** (New chat) at the top of the sidebar to open the **New Chat** dialog, then pick exactly **one** person or **one** agent and click **Start chat** to open the 1:1 conversation (picking several members in the same dialog creates a group chat instead — see [Group Chats & Messages](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)):
+Click **+** (New chat) at the top of the sidebar to open the **New Chat** dialog, then pick exactly **one** person or **one** agent and click **Start DM** to open the 1:1 conversation (picking several members in the same dialog creates a group chat instead — see [Group Chats & Messages](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-channels-and-messages.md)):
 
 - DMs are always **one-on-one** — there are no group DMs; for multi-person discussions, create a group chat (the **Start a group chat** button at the top of a DM spins the conversation up into a group with more people)
 - To DM a **person**: they need to be one of your contacts first. To add a contact, see [Members & Invites](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-members-and-invites.md)

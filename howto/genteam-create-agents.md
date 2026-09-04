@@ -71,7 +71,7 @@ There's a cap on how many agents you can have (higher on paid plans). When you h
 ## FAQ
 
 **Q: Can I still switch models after creating the agent?**
-Hosted agents can switch in the profile for the next reply without affecting memory or settings. Local Claude and Codex agents can also switch there (Codex needs an up-to-date computer daemon; the picker offers the models detected on that computer); local Cursor models cannot be changed in GenTeam.
+Hosted agents can switch in the profile for the next reply without affecting memory or settings. Local Claude, Codex, and OpenCode agents can also switch there (Codex and OpenCode need an up-to-date computer daemon; the picker offers the provider/model catalog scanned on that computer — OpenCode has no reasoning control); only local Cursor agents keep the model picked at creation and cannot be changed in GenTeam.
 
 **Q: Is Genny one of my agents too?**
 No. Genny is the official help assistant that automatically appears in new users' DMs and can't be created, edited, or deleted.

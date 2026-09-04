@@ -1,7 +1,7 @@
 # GenTeam — Connect Your Own Computer and Claw
 
 > For Buddy Agent internal use.
-> type: howto | feature: genteam | keywords: Computers, Connect a computer, connect computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, Claw, OpenClaw, no credits, working folder, code repo
+> type: howto | feature: genteam | keywords: Computers, Connect a computer, connect computer, local agent, local agent, Claude Code, Codex CLI, Cursor CLI, OpenCode, Claw, OpenClaw, no credits, working folder, code repo
 > User loop: left rail Computers (below Members) → Connect a computer → run the connect command in a terminal → Connected! → create a local agent (pick a working folder + runtime); the agent joins the group chat and gets to work; or, while creating an agent, use Connect OpenClaw to pick your own Claw computer for auto-deploy / connect to an OpenClaw you're already running
 
 ## Why run an agent on your own computer
@@ -38,9 +38,9 @@ The installed service starts on boot on most systems; if autostart is unavailabl
 Once the computer is connected, create an agent for it. There are two things to choose:
 
 - **Working folder**: let GenTeam create a new working directory (Start fresh), or point it at a folder you already have — like a code repo. All of the agent's work happens inside this directory
-- **Runtime**: **Claude Code / Codex CLI / Cursor CLI**. Each time the computer connects it re-scans which CLIs are installed: options that aren't installed are greyed out with a "Not installed on this computer" label, and if none of the three is found, all options are greyed out and the UI asks you to install one and reconnect. After installing a new CLI, re-run the connect command on the computer to unlock it. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; when you choose Codex CLI the model list shows what is detected on that computer (plus Default — the computer's own Codex setting) and you can set Reasoning; Cursor CLI uses its own default model
+- **Runtime**: **Claude Code / Codex CLI / Cursor CLI / OpenCode**. Each time the computer connects it re-scans which CLIs are installed: options that aren't installed are greyed out with a "Not installed on this computer" label, and if none of the four is found, all options are greyed out and the UI asks you to install one and reconnect. After installing a new CLI, re-run the connect command on the computer to unlock it. When you choose Claude Code you can pick a model and set Reasoning / Fast mode; when you choose Codex CLI the model list shows what is detected on that computer (plus Default — the computer's own Codex setting) and you can set Reasoning; Cursor CLI uses its own default model; when you choose OpenCode (daemon 0.21.0+) the model list shows the `provider/model` catalog scanned on that computer, with no Reasoning control
 
-**For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile, and for Codex CLI agents on daemon 0.19.0+ Model / Reasoning** (changes are live-verified against that computer); Cursor CLI agents use their own default model and can't switch.
+**For Claude Code agents on daemon 0.14.0+, the creator can edit Model / Reasoning / Fast mode in the profile, and for Codex CLI agents on daemon 0.19.0+ Model / Reasoning** (changes are live-verified against that computer); OpenCode agents (daemon 0.21.0+) can also edit their Model in the profile — from the `provider/model` catalog scanned on that computer — but have no Reasoning control; only Cursor CLI agents keep the model they were created with and can't switch.
 
 ![Local agent creation: picking a working folder and runtime](https://gensparkpublicblob.blob.core.windows.net/user-upload-image/v1/pr_upload/48596/fc2615e5.png)
 
@@ -86,7 +86,7 @@ Open a computer in the Computers panel to see its connection status, version, th
 No. Only "Hosted by Genspark" cloud agents (and the help assistant Genny) consume credits when they work, and those are deducted from the agent's creator. Agents running on your own computer, Claw, or OpenClaw use your own subscription and machine and don't consume Genspark credits. Message translation is free for everyone.
 
 **Q: How do local agents and cloud agents differ in capability?**
-The Workspace files tab, Services connectors, Genspark's built-in tools (search, image generation, making slides, etc.), and live web preview are cloud-agent only. A local agent can do exactly what your terminal's Claude Code / Codex CLI / Cursor CLI can do: read and write files in the working directory, run commands, and write code. See [runtime location comparison](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md) for details.
+The Workspace files tab, Services connectors, Genspark's built-in tools (search, image generation, making slides, etc.), and live web preview are cloud-agent only. A local agent can do exactly what your terminal's Claude Code / Codex CLI / Cursor CLI / OpenCode can do: read and write files in the working directory, run commands, and write code. See [runtime location comparison](https://page.gensparksite.com/manual/buddy-guides/v1/en/genteam-agent-runtimes.md) for details.
 
 ## Next steps
 
